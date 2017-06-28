@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Non Standard Request Task" max_length="40" name="x_sigr_non_std_req_non_standard_request_task" sizeclass="19" type="collection">
+        <element choice="1" label="Task" max_length="40" name="task" read_only="true" type="choice">
+            <choice>
+                <element label="Existing Software" sequence="0" value="1"/>
+                <element label="Vulnerability Checks" sequence="1" value="2"/>
+                <element label="Compatibility Checks" sequence="2" value="3"/>
+                <element label="Licencing Compliance" sequence="3" value="4"/>
+                <element label="Costs" sequence="4" value="5"/>
+                <element label="IT Tests" sequence="5" value="6"/>
+                <element label="User Tests" sequence="6" value="7"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>sysapproval_approver</collection>
+        <message/>
+        <message_html><![CDATA[<p>Hi ${approver.first_name},</p>
+<p>${mail_script:nsr_sysapproval_approver_script}</p>
+<p>Regards<br />SiskGroup IT</p>
+<hr />
+<div>${mailto:mailto.approval}</div>
+<div>${mailto:mailto.rejection}</div>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>nsr.request.approval</name>
+        <sms_alternate/>
+        <subject>${sysapproval.sys_class_name}  for ${sysapproval.short_description} is ${sysapproval.state}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-06-23 08:38:17</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d12d45d537e776006f3c8d2754990e89</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>nsr.request.approval</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sysevent_email_template_d12d45d537e776006f3c8d2754990e89</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-06-28 11:08:31</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>
