@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element extends="task" label="Non Standard Request Log" max_length="40" name="x_sigr_non_std_req_non_standard_request_log" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Log Type" max_length="40" name="log_type" reference="sys_choice" reference_qual="element=task^name=x_sigr_non_std_req_non_standard_request_task^inactive=false^EQ" reference_qual_condition="element=task^name=x_sigr_non_std_req_non_standard_request_task^inactive=false^EQ" type="reference">
-            <choice/>
-        </element>
-        <element label="NSR Task" max_length="32" name="nsr_task" reference="x_sigr_non_std_req_non_standard_request_task" type="reference"/>
-    </element>
-</database>

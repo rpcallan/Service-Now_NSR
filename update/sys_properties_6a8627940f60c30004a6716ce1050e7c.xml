@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Non Standard Request activity formatter fields</description>
+        <ignore_cache>false</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.ui.x_sigr_non_std_req_non_standard_request_activity.fields</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-08-09 10:10:58</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6a8627940f60c30004a6716ce1050e7c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.ui.x_sigr_non_std_req_non_standard_request_activity.fields</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_properties_6a8627940f60c30004a6716ce1050e7c</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-08-09 10:10:58</sys_updated_on>
+        <type>string</type>
+        <value>assigned_to,state,opened_by,work_notes,comments,*Email*</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=6a8627940f60c30004a6716ce1050e7c"/>
+</record_update>

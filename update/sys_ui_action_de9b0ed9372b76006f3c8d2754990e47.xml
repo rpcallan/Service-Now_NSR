@@ -23,7 +23,7 @@
         <order>100</order>
         <script><![CDATA[// Show the workflow context in a new window
 function showWorkflowContext() {
-   var id = $F('sys_uniqueValue');
+   var id = g_form.getUniqueValue();
    var url = new GlideURL('context_workflow.do');
    url.addParam('sysparm_stack', 'no');
    url.addParam('sysparm_table', g_form.getTableName());
@@ -38,10 +38,10 @@ function showWorkflowContext() {
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-06-23 13:05:49</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>de9b0ed9372b76006f3c8d2754990e47</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Show Workflow</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -50,7 +50,7 @@ function showWorkflowContext() {
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_ui_action_de9b0ed9372b76006f3c8d2754990e47</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-06-23 13:19:23</sys_updated_on>
+        <sys_updated_on>2017-08-08 15:29:29</sys_updated_on>
         <table>x_sigr_non_std_req_non_standard_request</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

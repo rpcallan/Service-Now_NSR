@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>active</field>
+        <global>true</global>
+        <messages/>
+        <name>(NSR) Hide Fields</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+	g_form.setDisplay('existing_software', false);
+	g_form.setDisplay('alternate_software', false);
+	g_form.setDisplay('vulnerability_risk', false);
+	g_form.setDisplay('compatibility', false);
+	g_form.setDisplay('compatibility_issue', false);
+	g_form.setDisplay('compliance', false);
+	g_form.setDisplay('compliance_issue', false);
+	g_form.setDisplay('costs', false);
+	g_form.setDisplay('cost_per_unit', false);
+	g_form.setDisplay('annual_cost', false);
+	g_form.setDisplay('it_testing', false);
+	g_form.setDisplay('it_testing_summary', false);
+	g_form.setDisplay('user_install', false);
+	g_form.setDisplay('add_to_catalog', false);
+	
+	var task = g_form.getValue('task');
+	
+	//For each tasks, check if the relevant checks are complete and set mandatory fields
+	if(task == 1){
+		g_form.setDisplay('existing_software', true);
+		g_form.setDisplay('alternate_software', true);
+	}
+	if(task == 2){
+		g_form.setDisplay('vulnerability_risk', true);
+	}
+	if(task == 3){
+		g_form.setDisplay('compatibility', true);
+		g_form.setDisplay('compatibility_issue', true);
+	}
+	if(task == 4){
+		g_form.setDisplay('compliance', true);
+		g_form.setDisplay('compliance_issue', true);
+	}
+	if(task == 5){
+		g_form.setDisplay('costs', true);
+		g_form.setDisplay('cost_per_unit', true);
+		g_form.setDisplay('annual_cost', true);
+		
+	}
+	if(task == 6 ){
+		g_form.setDisplay('it_testing', true);
+		g_form.setDisplay('it_testing_summary', true);
+	}
+	if(task == 7 ){
+		g_form.setDisplay('user_install', true);
+	}
+	if(task == 8 ){
+		g_form.setDisplay('add_to_catalog', true);
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-08-04 14:57:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>a77676f20f54430004a6716ce1050ec7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>(NSR) Hide Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_script_client_a77676f20f54430004a6716ce1050ec7</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-08-08 16:02:41</sys_updated_on>
+        <table>x_sigr_non_std_req_nsr_task</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

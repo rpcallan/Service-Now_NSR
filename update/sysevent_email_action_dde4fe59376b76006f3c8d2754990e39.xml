@@ -17,7 +17,7 @@
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
-        <from>Non Standard Software Request &lt;siskgroup@service-now.com&gt;</from>
+        <from>Non Standard Request &lt;siskgroup@service-now.com&gt;</from>
         <generation_type>engine</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
@@ -25,18 +25,18 @@
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<p>Hi</p>
-<p>Non-standard Request ${number} has been approved and is now pending initial checks</p>
-<p>Regards</p>
-<p>Siskgroup IT</p>]]></message_html>
+        <message_html><![CDATA[<p>Hi ${requested_by.first_name}</p>
+<p>Your Request for <b>${short_description}</b> has been approved. It will now need to complete a number of IT Tests to ensure it meets requirements and is compatible with our systems. Once testing is completed or if the item doesn't meet our requirements you will be notified by email.</p>
+<p>You can also see the progress of the request on the portal</p>
+<p>Regards<br />Siskgroup IT</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name>NSR Initial Checks</name>
+        <name>(NSR) Approved for IT Checks</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
         <recipient_fields>requested_by</recipient_fields>
-        <recipient_groups name="Non Standard Group Approval">636ce5c537e376006f3c8d2754990e1d</recipient_groups>
+        <recipient_groups>636ce5c537e376006f3c8d2754990e1d</recipient_groups>
         <recipient_users/>
         <reply_to/>
         <send_self>true</send_self>
@@ -47,11 +47,11 @@
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-06-23 16:09:52</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>dde4fe59376b76006f3c8d2754990e39</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>NSR Initial Checks</sys_name>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>(NSR) Approved for IT Checks</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
         <sys_policy/>
@@ -59,7 +59,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sysevent_email_action_dde4fe59376b76006f3c8d2754990e39</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-06-26 09:14:22</sys_updated_on>
+        <sys_updated_on>2017-08-10 08:47:20</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

@@ -42,10 +42,10 @@
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-06-23 08:16:24</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>4e29419537e776006f3c8d2754990e58</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>NSR Approval Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -54,7 +54,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sysevent_email_action_4e29419537e776006f3c8d2754990e58</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-06-26 09:03:39</sys_updated_on>
+        <sys_updated_on>2017-08-08 13:56:21</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="nsr.request.approval">d12d45d537e776006f3c8d2754990e89</template>
         <type>email</type>

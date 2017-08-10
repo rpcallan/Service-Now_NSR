@@ -1,24 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" sizeclass="3" type="collection">
-        <element label="Alternate Software" max_length="32" name="alternate_software" reference="pc_software_cat_item" type="reference"/>
+    <element attributes="email_client=true,hasWorkflow=true" audit="true" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" sizeclass="16" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Added To Catalog" max_length="40" name="add_to_catalog" read_only="true" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="Alternate Software" max_length="32" name="alternate_software" read_only="true" reference="pc_software_cat_item" type="reference"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Annual Cost" max_length="15" name="annual_cost" type="currency"/>
         <element choice="1" default="software" label="Category" max_length="40" name="category" read_only="true" type="choice">
             <choice>
                 <element label="Software" sequence="100" value="software"/>
             </choice>
         </element>
-        <element label="Compatible" max_length="40" name="compatible" type="boolean"/>
-        <element label="Compliant" max_length="40" name="compliant" type="boolean"/>
-        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" default="0" label="Cost Per Unit" max_length="15" name="cost_per_unit" type="price"/>
-        <element label="Existing Software" max_length="40" name="existing_sofware" type="boolean"/>
-        <element label="Install For" max_length="1000" name="install_for" reference="sys_user" type="glide_list"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compatibility" max_length="40" name="compatibility" read_only="true" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Compatibility Issue Summary" max_length="1000" name="compatibility_issue" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compliance" max_length="40" name="compliance" read_only="true" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Compliance Issue Summary" max_length="1000" name="compliance_issue" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Costs" max_length="40" name="costs" read_only="true" type="choice">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Costs Added" max_length="40" name="costs_added" type="boolean"/>
+        <element label="Cost Per Unit" max_length="40" name="cost_per_unit" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Existing Software" max_length="40" name="existing_software" read_only="true" type="string">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Install For" max_length="1000" name="install_for" read_only="true" reference="sys_user" type="glide_list"/>
         <element label="Install Qty" max_length="2" name="install_qty" read_only="true" type="integer"/>
+        <element choice="1" label="IT Testing" max_length="40" name="it_testing" read_only="true" type="choice">
+            <choice>
+                <element label="Yes" sequence="0" value="yes"/>
+                <element label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element label="No" sequence="3" value="no"/>
+            </choice>
+        </element>
+        <element label="IT Testing Issue Summary" max_length="1000" name="it_testing_summary" read_only="true" type="string"/>
         <element label="Justification" max_length="4000" name="justification" read_only="true" type="string"/>
         <element label="Project" max_length="32" name="project" reference="x_sigr_sisk_hr_co_coins_projects" type="reference"/>
         <element label="Project Name" max_length="100" name="project_name" read_only="true" type="string"/>
         <element label="Project No" max_length="10" name="project_no" read_only="true" type="string"/>
         <element label="Region" max_length="32" name="region" read_only="true" reference="x_sigr_sisk_hr_co_region_division" type="reference"/>
         <element label="Requested By" max_length="32" name="requested_by" read_only="true" reference="sys_user" type="reference"/>
-        <element label="Vulnerability Risk" max_length="15" name="vulnerability_risk" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="User Installed" max_length="40" name="user_install" read_only="true" type="string">
+            <choice>
+                <element label="Choice 1" sequence="0" value="Choice 1"/>
+                <element label="Choice 2" sequence="1" value="Choice 2"/>
+                <element label="Choice 3" sequence="2" value="Choice 3"/>
+            </choice>
+        </element>
+        <element label="Vulnerability Score" max_length="15" name="vulnerability_risk" read_only="true" type="decimal"/>
     </element>
 </database>
