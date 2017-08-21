@@ -5,8 +5,13 @@
         <array>false</array>
         <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Alternate Software</column_label>
@@ -25,15 +30,15 @@
         <element>alternate_software</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
+        <max_length>250</max_length>
         <name>x_sigr_non_std_req_nsr_task</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="pc_software_cat_item">pc_software_cat_item</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -45,9 +50,9 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
-        <sys_created_on>2017-08-04 14:39:56</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
-        <sys_id>3924fe7a37d44f006f3c8d2754990eec</sys_id>
+        <sys_created_on>2017-08-17 16:06:22</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>9474ca8f0fa8030004a6716ce1050e87</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Alternate Software</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -56,7 +61,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_dictionary_x_sigr_non_std_req_nsr_task_alternate_software</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-04 14:39:56</sys_updated_on>
+        <sys_updated_on>2017-08-17 16:06:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

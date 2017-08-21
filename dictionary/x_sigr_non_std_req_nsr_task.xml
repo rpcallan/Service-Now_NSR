@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" sizeclass="58" type="collection">
+    <element audit="true" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" sizeclass="18" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="Add To Catalog" max_length="40" name="add_to_catalog" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>
                 <element label="No" sequence="1" value="no"/>
             </choice>
         </element>
-        <element label="Alternate Software" max_length="32" name="alternate_software" reference="pc_software_cat_item" type="reference"/>
+        <element label="Alternate Software" max_length="250" name="alternate_software" type="string"/>
         <element attributes="omit_sys_original=true" label="Annual Cost" max_length="15" name="annual_cost" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Compatibility" max_length="40" name="compatibility" type="string">
             <choice>
@@ -25,13 +25,13 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Compliance Issue" max_length="1000" name="compliance_issue" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Costs" max_length="40" name="costs" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Cost Difference" max_length="40" name="costs" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>
                 <element label="No" sequence="1" value="no"/>
             </choice>
         </element>
-        <element attributes="omit_sys_original=true" label="Cost Per Unit" max_length="15" name="cost_per_unit" type="currency"/>
+        <element attributes="omit_sys_original=true" label="Install Cost" max_length="15" name="cost_per_unit" type="currency"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Existing Software" max_length="40" name="existing_software" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>
@@ -46,6 +46,9 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="IT Testing Issue" max_length="1000" name="it_testing_summary" type="string"/>
+        <element label="Predicted Annual Cost" max_length="40" name="predicted_annual_cost" type="price"/>
+        <element label="Predicted Install Cost" max_length="40" name="predicted_install_cost" type="price"/>
+        <element label="Reason For Difference" max_length="1000" name="reason_for_difference" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Task" max_length="40" name="task" read_only="true" type="string">
             <choice>
                 <element label="Existing Software" sequence="0" value="1"/>

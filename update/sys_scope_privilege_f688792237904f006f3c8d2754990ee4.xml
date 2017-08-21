@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-03 15:41:00</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f688792237904f006f3c8d2754990ee4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ScopedWorkflow</sys_name>

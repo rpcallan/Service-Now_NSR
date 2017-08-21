@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="email_client=true,hasWorkflow=true" audit="true" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" sizeclass="16" type="collection">
+    <element attributes="email_client=true,hasWorkflow=true" audit="true" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" sizeclass="5" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="Added To Catalog" max_length="40" name="add_to_catalog" read_only="true" type="string">
             <choice>
                 <element label="Choice 1" sequence="0" value="Choice 1"/>
@@ -8,8 +8,8 @@
                 <element label="Choice 3" sequence="2" value="Choice 3"/>
             </choice>
         </element>
-        <element label="Alternate Software" max_length="32" name="alternate_software" read_only="true" reference="pc_software_cat_item" type="reference"/>
-        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Annual Cost" max_length="15" name="annual_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Alternate Software" max_length="1000" name="alternate_software" read_only="true" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Annual Cost" max_length="15" name="annual_cost" type="price"/>
         <element choice="1" default="software" label="Category" max_length="40" name="category" read_only="true" type="choice">
             <choice>
                 <element label="Software" sequence="100" value="software"/>
@@ -31,14 +31,9 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Compliance Issue Summary" max_length="1000" name="compliance_issue" read_only="true" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Costs" max_length="40" name="costs" read_only="true" type="choice">
-            <choice>
-                <element label="Yes" sequence="0" value="yes"/>
-                <element label="No" sequence="1" value="no"/>
-            </choice>
-        </element>
+        <element label="Cost Greater" max_length="40" name="costs" read_only="true" type="string"/>
         <element label="Costs Added" max_length="40" name="costs_added" type="boolean"/>
-        <element label="Cost Per Unit" max_length="40" name="cost_per_unit" type="currency"/>
+        <element label="Install Cost" max_length="40" name="cost_per_unit" type="price"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Existing Software" max_length="40" name="existing_software" read_only="true" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>
@@ -56,11 +51,22 @@
         </element>
         <element label="IT Testing Issue Summary" max_length="1000" name="it_testing_summary" read_only="true" type="string"/>
         <element label="Justification" max_length="4000" name="justification" read_only="true" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Predicted Annual Cost" max_length="15" name="predicted_annual_cost" type="price"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Predicted Install Cost" max_length="15" name="predicted_install_cost" type="price"/>
         <element label="Project" max_length="32" name="project" reference="x_sigr_sisk_hr_co_coins_projects" type="reference"/>
         <element label="Project Name" max_length="100" name="project_name" read_only="true" type="string"/>
         <element label="Project No" max_length="10" name="project_no" read_only="true" type="string"/>
+        <element label="Reason For Difference" max_length="1000" name="reason_for_difference" read_only="true" type="string"/>
         <element label="Region" max_length="32" name="region" read_only="true" reference="x_sigr_sisk_hr_co_region_division" type="reference"/>
         <element label="Requested By" max_length="32" name="requested_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Software Type" max_length="40" name="software_type" read_only="true" type="string">
+            <choice>
+                <element label="Freeware" sequence="0" value="0"/>
+                <element label="Licensed Software" sequence="1" value="1"/>
+                <element label="Unknown" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element label="Unknown Cost" max_length="40" name="unknown_cost" read_only="true" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="User Installed" max_length="40" name="user_install" read_only="true" type="string">
             <choice>
                 <element label="Choice 1" sequence="0" value="Choice 1"/>

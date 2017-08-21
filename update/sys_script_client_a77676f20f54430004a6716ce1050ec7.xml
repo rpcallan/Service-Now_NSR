@@ -22,6 +22,9 @@
 	g_form.setDisplay('costs', false);
 	g_form.setDisplay('cost_per_unit', false);
 	g_form.setDisplay('annual_cost', false);
+	g_form.setDisplay('predicted_install_cost', false);
+	g_form.setDisplay('predicted_annual_cost', false);
+	g_form.setDisplay('reason_for_difference', false);
 	g_form.setDisplay('it_testing', false);
 	g_form.setDisplay('it_testing_summary', false);
 	g_form.setDisplay('user_install', false);
@@ -49,6 +52,9 @@
 		g_form.setDisplay('costs', true);
 		g_form.setDisplay('cost_per_unit', true);
 		g_form.setDisplay('annual_cost', true);
+		g_form.setDisplay('predicted_install_cost', true);
+	g_form.setDisplay('predicted_annual_cost', true);
+	g_form.setDisplay('reason_for_difference', true);
 		
 	}
 	if(task == 6 ){
@@ -69,7 +75,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>a77676f20f54430004a6716ce1050ec7</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>(NSR) Hide Fields</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -78,7 +84,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_script_client_a77676f20f54430004a6716ce1050ec7</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-08 16:02:41</sys_updated_on>
+        <sys_updated_on>2017-08-17 15:03:15</sys_updated_on>
         <table>x_sigr_non_std_req_nsr_task</table>
         <type>onLoad</type>
         <ui_type>10</ui_type>

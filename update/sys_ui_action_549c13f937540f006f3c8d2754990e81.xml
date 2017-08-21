@@ -160,7 +160,7 @@ function CloseRecord(){
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-01 15:33:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>549c13f937540f006f3c8d2754990e81</sys_id>
         <sys_mod_count>31</sys_mod_count>

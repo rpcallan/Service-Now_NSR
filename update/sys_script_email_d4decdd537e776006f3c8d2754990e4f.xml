@@ -13,9 +13,11 @@
 	
 	var state = gr.state;
 	gs.info('Approval State' + state);
-	if(state == -5){ //awaiting approval
-		template.print('<p>A Non Standard Request has been created to you for your approval as follows. Please review the details below and select the links at the bottom of this email to approve or reject this request. (If you are rejecting the request, please provide details in the email body)</p>');
 	
+	//awaiting approval
+	if(state == -5){
+		template.print('<p>A Non Standard Request has been created to you for your approval as follows. Please review the details below and select the links at the bottom of this email to approve or reject this request. (If you are rejecting the request, please provide details in the email body)</p>');
+		
 		template.print('<table style="border: 1px solid #707070; padding: 3px 7px 2px 7px">');
 		template.print('<tr><td>Requested By:</td><td>' + gr.requested_by.getDisplayValue() + '</td></tr>');
 		template.print('<tr><td>Name:</td><td>' + gr.short_description + '</td></tr>');
@@ -23,10 +25,12 @@
 		template.print('<tr><td>Justification:</td><td>' + gr.justification + '</tr>');
 		template.print('</table>');
 	}
-
-	if(state == -6){//initial checks
+	
+	//initial checks
+	if(state == -6){
+		var costs = gr.costs;
 		template.print('<p>The Non-standard request for <strong>' + gr.short_description + '</strong> has completed Initial Checks. Based on the outcome of these, please select if you are approving or rejecting this request. (If you are rejecting the request, please provide details in the email body)</p>');
-
+		
 		template.print('<table style="border: 1px solid #707070; padding: 3px 7px 2px 7px">');
 		template.print('<tr><td>Vulnerability Score:</td><td>' + gr.vulnerability_risk + '</td>');
 		template.print('<td style="border-left: 1px solid #707070"></td><td></td></tr>');
@@ -36,47 +40,55 @@
 		template.print('<td style="border-left: 1px solid #707070">Compliance Issue Summary:</td><td>' + gr.compliance_issue + '</td></tr>');
 		template.print('<tr><td>Existing Software:</td><td>' + gr.existing_software.getDisplayValue() + '</td>');
 		template.print('<td style="border-left: 1px solid #707070">Alternate Software:</td><td>' + gr.alternate_software.getDisplayValue() + '</td></tr>');
-		template.print('<tr><td>Costs:</td><td>' + gr.costs.getDisplayValue() + '</td>');
-		template.print('<td>Cost Per Unit:</td><td>' + gr.cost_per_unit.getCurrencyDisplayValue() + '</td></tr>');
-		template.print('<tr><td></td><td></td>');
-		template.print('<td style="border-left: 1px solid #707070">Annual Cost:</td><td>' + gr.annual_cost.getCurrencyDisplayValue() + '</td></tr>');
+		template.print('<tr><td>Cost Greater:</td><td>' + gr.costs.getDisplayValue() + '</td>');
+		template.print('<td>Reason For Difference</td><td>' + gr.reason_for_difference + '</td></tr>');
+		
+		if(costs == 'yes'){
+			template.print('<tr><td>Predicted Install Cost:</td>' + gr.predicted_install_cost.getCurrencyDisplayValue() + '<td></td>');
+			template.print('<td style="border-left: 1px solid #707070">Actual Install Cost:</td><td>' + gr.cost_per_unit.getCurrencyDisplayValue() + '</td></tr>');
+			template.print('<tr><td>Predicted Annual Cost:</td>' + gr.predicted_annual_cost.getCurrencyDisplayValue() + '<td></td>');
+			template.print('<td style="border-left: 1px solid #707070">Actual Annual Cost:</td><td>' + gr.annual_cost.getCurrencyDisplayValue() + '</td></tr>');
+		}
 		template.print('</table>');
 	}
-
-	if(state == -7){//awaiting cost approval
+	
+	//awaiting cost approval
+	if(state == -7){
 		template.print('<p>The Non-standard request for <strong>' + gr.short_description + '</strong> has completed Initial Check and is ready to move to testing phase. Please confirm the following costs to proceed</p>');
-
+		
 		template.print('<table style="border: 1px solid #707070; padding: 3px 7px 2px 7px">');
 		template.print('<tr><td>Cost Per Install:</td><td>' + gr.cost_per_unit.getCurrencyDisplayValue()  + '</td></tr>');
 		template.print('<tr><td>Annual Cost:</td><td>' + gr.annual_cost.getCurrencyDisplayValue() + '</td></tr>');
 		template.print('</table>');
 	}
-
-	if(state == -8){//IT Testing
+	
+	//IT Testing
+	if(state == -8){
 		template.print('<p>The Non-standard request for <strong>' + gr.short_description + '</strong> has completed IT Testing. Based on the outcome of these, please select if you are approving or rejecting this request. (If you are rejecting the request, please provide details in the email body)</p>');
-
+		
 		template.print('<table style="border: 1px solid #707070; padding: 3px 7px 2px 7px">');
 		template.print('<tr><td>IT Testing:</td><td>' + gr.it_testing.getDisplayValue() + '</td>');
 		template.print('<td style="border-left: 1px solid #707070">IT Testing Issue Summary</td><td>' + gr.it_testing_summary + '</td></tr>');
 		template.print('</table>');
 	}
-
-	if(state == -9){//initial checks
+	
+	//initial checks
+	if(state == -9){
 		template.print('<p>The Non-standard request for <strong>' + gr.short_description + '</strong> has completed User Install. Based on the outcome of these, please select if you are approving or rejecting this request. (If you are rejecting the request, please provide details in the email body)</p>');
-
+		
 		template.print('<table style="border: 1px solid #707070; padding: 3px 7px 2px 7px">');
 		template.print('<tr><td>User Installed:</td><td>' + gr.user_install.getDisplayValue() + '</td></tr>');
 		template.print('<tr><td>Added To Catalog</td><td>' + gr.add_to_catalog.getDisplayValue() + '</td></tr>');
 		template.print('</table>');
 	}
-
+	
 })(current, template, email, email_action, event);]]></script>
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-06-23 11:02:13</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>d4decdd537e776006f3c8d2754990e4f</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>nsr_sysapproval_approver_script</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
         <sys_policy/>
@@ -84,6 +96,6 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_script_email_d4decdd537e776006f3c8d2754990e4f</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-10 08:28:02</sys_updated_on>
+        <sys_updated_on>2017-08-21 11:17:21</sys_updated_on>
     </sys_script_email>
 </record_update>

@@ -22,7 +22,7 @@
         <sys_class_name>sys_dictionary_override</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-04 15:01:07</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>9ef876360f54430004a6716ce1050e5f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>approval</sys_name>

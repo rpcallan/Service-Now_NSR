@@ -47,7 +47,7 @@
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-09 16:01:25</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>80c6bc2c3724cf006f3c8d2754990e3c</sys_id>
         <sys_mod_count>4</sys_mod_count>

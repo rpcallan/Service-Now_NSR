@@ -47,7 +47,7 @@
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-04 14:35:02</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>8a03ba7a37d44f006f3c8d2754990e4e</sys_id>
+        <sys_id>5d80f3a20f20030004a6716ce1050eb4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>IT Testing</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -55,8 +55,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_dictionary_x_sigr_non_std_req_nsr_task_it_testing</sys_update_name>
-        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-04 14:35:02</sys_updated_on>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2017-08-16 10:41:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

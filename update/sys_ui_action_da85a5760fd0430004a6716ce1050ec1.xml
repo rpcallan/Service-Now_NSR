@@ -31,7 +31,7 @@ action.setRedirectURL(current);]]></script>
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-04 08:56:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>da85a5760fd0430004a6716ce1050ec1</sys_id>
         <sys_mod_count>2</sys_mod_count>

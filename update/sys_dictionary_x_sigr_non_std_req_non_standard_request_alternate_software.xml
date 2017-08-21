@@ -3,7 +3,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="alternate_software" table="x_sigr_non_std_req_non_standard_request">
         <active>true</active>
         <array>false</array>
-        <attributes/>
+        <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
         <choice/>
@@ -25,15 +25,15 @@
         <element>alternate_software</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
+        <max_length>1000</max_length>
         <name>x_sigr_non_std_req_non_standard_request</name>
         <next_element/>
         <primary>false</primary>
         <read_only>true</read_only>
         <read_roles/>
-        <reference display_value="" name="pc_software_cat_item">pc_software_cat_item</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -45,9 +45,9 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
-        <sys_created_on>2017-06-22 09:33:52</sys_created_on>
+        <sys_created_on>2017-08-17 16:04:51</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
-        <sys_id>f3ac049f0f67320004a6716ce1050ed4</sys_id>
+        <sys_id>60444a8f0fa8030004a6716ce1050e3e</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Alternate Software</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_dictionary_x_sigr_non_std_req_non_standard_request_alternate_software</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-03 08:20:14</sys_updated_on>
+        <sys_updated_on>2017-08-21 08:19:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

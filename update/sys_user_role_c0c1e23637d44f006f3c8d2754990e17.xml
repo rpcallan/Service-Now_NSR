@@ -13,7 +13,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-04 13:19:32</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c0c1e23637d44f006f3c8d2754990e17</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_sigr_non_std_req_non_standard_request_task_user</sys_name>

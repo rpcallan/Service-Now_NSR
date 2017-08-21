@@ -21,7 +21,7 @@
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-04 13:38:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>19d52e7637d44f006f3c8d2754990ef9</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>NSR Task</sys_name>

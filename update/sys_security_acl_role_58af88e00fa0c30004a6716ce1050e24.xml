@@ -4,7 +4,7 @@
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-09 13:10:29</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>58af88e00fa0c30004a6716ce1050e24</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_sigr_non_std_req_nsr_task.itil</sys_name>
