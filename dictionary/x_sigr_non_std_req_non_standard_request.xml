@@ -63,7 +63,6 @@
             <choice>
                 <element label="Freeware" sequence="0" value="0"/>
                 <element label="Licensed Software" sequence="1" value="1"/>
-                <element label="Unknown" sequence="2" value="2"/>
             </choice>
         </element>
         <element label="Unknown Cost" max_length="40" name="unknown_cost" read_only="true" type="boolean"/>
