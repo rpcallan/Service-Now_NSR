@@ -124,14 +124,12 @@ function CloseRecord(){
 	if (current.task == 5){
 		gr.costs = current.costs;
 		gr.costs_added = true;
-		var cpuArr = current.cost_per_unit;
-		//gs.addInfoMessage('Array: ' + cpuArr[0] +';' + cpuArr[1] + 'currency display value: ' + current.cost_per_unit.getCurrencyDisplayValue());
+		//gr.setValue('cost_per_unit', current.cost_per_unit.getCurrencyDisplayValue());
 		//gr.cost_per_unit = current.cost_per_unit.getCurrencyDisplayValue();
 		//gr.annual_cost = current.annual_cost.getCurrencyString();
-		//gr.reason_for_difference = current.reason_for_difference;
 		
 		//gs.addInfoMessage(current.cost_per_unit + ' - ' + current.cost_per_unit.getCurrencyDisplayValue());
-		gs.addInfoMessage(current.cost_per_unit.getCurrencyString() + ' - ' + gr.cost_per_unit);
+		//gs.addInfoMessage(current.cost_per_unit.getCurrencyString() + ' - ' + gr.cost_per_unit);
 		parUpdate = true;
 	}
 	if (current.task == 6){
@@ -162,10 +160,10 @@ function CloseRecord(){
         <sys_class_name>sys_ui_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-01 15:33:21</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>549c13f937540f006f3c8d2754990e81</sys_id>
-        <sys_mod_count>35</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>Close Complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -174,7 +172,7 @@ function CloseRecord(){
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_ui_action_549c13f937540f006f3c8d2754990e81</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-23 13:43:40</sys_updated_on>
+        <sys_updated_on>2017-08-04 15:17:54</sys_updated_on>
         <table>x_sigr_non_std_req_nsr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

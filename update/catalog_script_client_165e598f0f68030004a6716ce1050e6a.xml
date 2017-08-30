@@ -56,7 +56,7 @@
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-17 13:19:14</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>165e598f0f68030004a6716ce1050e6a</sys_id>
         <sys_mod_count>3</sys_mod_count>

@@ -12,7 +12,7 @@
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-18 08:06:11</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>92102ddf37a803006f3c8d2754990e10</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_sigr_non_std_req_non_standard_request.comments</sys_name>

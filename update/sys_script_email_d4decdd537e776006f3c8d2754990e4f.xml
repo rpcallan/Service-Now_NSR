@@ -86,7 +86,7 @@
         <sys_class_name>sys_script_email</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-06-23 11:02:13</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d4decdd537e776006f3c8d2754990e4f</sys_id>
         <sys_mod_count>12</sys_mod_count>
         <sys_name>nsr_sysapproval_approver_script</sys_name>

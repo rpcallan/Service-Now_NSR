@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" sizeclass="18" type="collection">
+    <element audit="true" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" sizeclass="26" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="Add To Catalog" max_length="40" name="add_to_catalog" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>

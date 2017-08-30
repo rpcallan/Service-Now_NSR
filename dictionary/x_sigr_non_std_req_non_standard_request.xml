@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element attributes="email_client=true,hasWorkflow=true" audit="true" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" sizeclass="5" type="collection">
+    <element attributes="email_client=true,hasWorkflow=true" audit="true" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" sizeclass="4" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="Added To Catalog" max_length="40" name="add_to_catalog" read_only="true" type="string">
             <choice>
                 <element label="Choice 1" sequence="0" value="Choice 1"/>
@@ -63,6 +63,7 @@
             <choice>
                 <element label="Freeware" sequence="0" value="0"/>
                 <element label="Licensed Software" sequence="1" value="1"/>
+                <element label="Unknown" sequence="2" value="2"/>
             </choice>
         </element>
         <element label="Unknown Cost" max_length="40" name="unknown_cost" read_only="true" type="boolean"/>

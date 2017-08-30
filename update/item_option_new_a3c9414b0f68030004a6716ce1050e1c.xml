@@ -57,7 +57,7 @@
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-17 11:50:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a3c9414b0f68030004a6716ce1050e1c</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Please complete costs as acurately as possibe as possible. If you don't know the costs then tick the costs unknown box</sys_name>
