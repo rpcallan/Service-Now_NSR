@@ -3,6 +3,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="predicted_install_cost" table="x_sigr_non_std_req_non_standard_request">
         <active>true</active>
         <array>false</array>
+        <array_denormalized>false</array_denormalized>
         <attributes>omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer</attributes>
         <audit>false</audit>
         <calculation/>

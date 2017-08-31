@@ -3,6 +3,7 @@
     <sys_dictionary action="INSERT_OR_UPDATE" element="add_to_catalog" table="x_sigr_non_std_req_nsr_task">
         <active>true</active>
         <array>false</array>
+        <array_denormalized>false</array_denormalized>
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>

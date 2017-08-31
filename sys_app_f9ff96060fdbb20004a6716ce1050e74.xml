@@ -5,6 +5,7 @@
         <enforce_license>log</enforce_license>
         <js_level>helsinki_es5</js_level>
         <licensable>true</licensable>
+        <license_model>none</license_model>
         <logo/>
         <menu/>
         <name>Non Standard Request</name>
@@ -22,9 +23,9 @@
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-21 19:20:48</sys_created_on>
         <sys_id>f9ff96060fdbb20004a6716ce1050e74</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-08-29 18:36:25</sys_updated_on>
+        <sys_updated_on>2017-08-31 06:08:29</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>

@@ -6,6 +6,7 @@
         <applies_extended>false</applies_extended>
         <applies_req_item>false</applies_req_item>
         <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Non-Standard Software Request">1b99d36037eb36006f3c8d2754990ee4</cat_item>
         <cat_variable>IO:c6b9a0720f24030004a6716ce1050e0c</cat_variable>
