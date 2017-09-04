@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" sizeclass="34" type="collection">
+    <element audit="true" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" sizeclass="69" type="collection">
         <element attributes="edge_encryption_enabled=true" choice="1" label="Add To Catalog" max_length="40" name="add_to_catalog" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>
@@ -25,7 +25,7 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Compliance Issue" max_length="1000" name="compliance_issue" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="1" label="Cost Difference" max_length="40" name="costs" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Is Cost Greater" max_length="40" name="costs" type="string">
             <choice>
                 <element label="Yes" sequence="0" value="yes"/>
                 <element label="No" sequence="1" value="no"/>
@@ -46,8 +46,8 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="IT Testing Issue" max_length="1000" name="it_testing_summary" type="string"/>
-        <element label="Predicted Annual Cost" max_length="40" name="predicted_annual_cost" type="price"/>
-        <element label="Predicted Install Cost" max_length="40" name="predicted_install_cost" type="price"/>
+        <element label="Predicted Annual Cost" max_length="15" name="predicted_annual_cost" type="price"/>
+        <element label="Predicted Install Cost" max_length="15" name="predicted_install_cost" type="price"/>
         <element label="Reason For Difference" max_length="1000" name="reason_for_difference" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Task" max_length="40" name="task" read_only="true" type="string">
             <choice>
@@ -59,6 +59,7 @@
                 <element label="IT Testing" sequence="5" value="6"/>
                 <element label="User Install" sequence="6" value="7"/>
                 <element label="Add to Catalog" sequence="7" value="8"/>
+                <element label="Create KB Article" sequence="8" value="9"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="User Install" max_length="40" name="user_install" type="string">

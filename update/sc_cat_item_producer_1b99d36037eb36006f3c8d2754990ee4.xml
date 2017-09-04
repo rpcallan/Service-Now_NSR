@@ -12,11 +12,13 @@
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
         <description><![CDATA[<p>Complete the fields below giving as much detail as possible including links to the software.</p>
-<p>Please note as it may take a number of weeks to process as once approved by your Regional BU Director, we will need to investigate for compatibility, vulnerabilities and cost, prior to installing on test machines. You will be notified of the requests progress</p>]]></description>
+<div>Approval by your Business Unit director does not automatically initiate installation of the software requested as we still require full testing by I.T. team to ensure the software does not compromise our systems or the security of those systems or Sisk Group. </div>
+<div> </div>
+<div>This testing cycle may take several weeks (aprox2-3 on average). You will be able to view the progress of your request on the IT Self service portal (this website)</div>]]></description>
         <entitlement_script/>
         <group/>
         <icon/>
-        <ignore_price>false</ignore_price>
+        <ignore_price>true</ignore_price>
         <image/>
         <list_price>0</list_price>
         <location/>
@@ -40,7 +42,7 @@
         <price>0</price>
         <recurring_frequency/>
         <recurring_price>0</recurring_price>
-        <redirect_url/>
+        <redirect_url>generated_record</redirect_url>
         <roles/>
         <sc_catalogs>e0d08b13c3330100c8b837659bba8fb4</sc_catalogs>
         <sc_ic_item_staging/>
@@ -55,7 +57,7 @@ current.predicted_annual_cost = producer.currency + ';' + producer.predicted_ann
         <sys_created_on>2017-06-21 10:51:46</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>1b99d36037eb36006f3c8d2754990ee4</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Non-Standard Software Request</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
         <sys_policy/>
@@ -63,7 +65,7 @@ current.predicted_annual_cost = producer.currency + ';' + producer.predicted_ann
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sc_cat_item_producer_1b99d36037eb36006f3c8d2754990ee4</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-22 10:48:18</sys_updated_on>
+        <sys_updated_on>2017-08-31 15:10:11</sys_updated_on>
         <table_name>x_sigr_non_std_req_non_standard_request</table_name>
         <template/>
         <type>item</type>

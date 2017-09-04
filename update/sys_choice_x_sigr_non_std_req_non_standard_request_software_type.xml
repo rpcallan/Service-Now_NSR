@@ -37,24 +37,6 @@
             <sys_updated_on>2017-08-21 19:21:51</sys_updated_on>
             <value>1</value>
         </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>software_type</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Unknown</label>
-            <language>en</language>
-            <name>x_sigr_non_std_req_non_standard_request</name>
-            <sequence>2</sequence>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-08-21 19:21:51</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>11b7935037348380d68998a543990eb5</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-08-21 19:21:51</sys_updated_on>
-            <value>2</value>
-        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>software_type</element>
             <name>x_sigr_non_std_req_non_standard_request</name>

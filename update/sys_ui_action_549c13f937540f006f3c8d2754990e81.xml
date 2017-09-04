@@ -67,15 +67,21 @@ function mandatoryCheck(){
 			g_form.showFieldMsg('costs',errorMsg,'error');
 			return false;
 		}
-		if(costs == 'yes'){
-			var cpuArr = g_form.getValue('cost_per_unit').split(';');
-			var annArr = g_form.getValue('annual_cost').split(';');
-			var cpu = cpuArr[1];
-			var ann = annArr[1];
-			if(cpu == '0.00' && ann == '0.00'){
-				g_form.showFieldMsg('costs','Cost per Unit or Annual costs must be greater than 0.','error');
-				return false;
-			}
+		var preIns = g_form.getValue('predicted_install_cost').split(';');
+		var preAnn = g_form.getValue('predicted_annual_cost').split(';');
+		var actIns = g_form.getValue('cost_per_unit').split(';');
+		var actAnn = g_form.getValue('annual_cost').split(';');
+		
+		alert('Install Actual: ' + actIns + 'Install Predicted: ' + preIns + 'Annual Actual: ' + actAnn + 'Annual Predicted: ' + preAnn);
+		
+		if(costs == 'no' && (actAnn > preAnn || actIns > preIns)){
+			g_form.showFieldMsg('costs','Actual Costs are Greater than Predicted Costs','error');
+			return false;
+		}
+		
+		if(costs == 'yes' && (actAnn < preAnn || actIns < preIns)){
+			g_form.showFieldMsg('costs','Predicted Costs are Greater than Actual Costs','error');
+			return false;
 		}
 	}
 	if(task == 6 ){
@@ -125,10 +131,10 @@ function CloseRecord(){
 	}
 	if (current.task == 5){
 		gr.costs = current.costs;
+		gr.reason_for_difference = current.reason_for_difference;
 		gr.costs_added = true;
-		//gr.setValue('cost_per_unit', current.cost_per_unit.getCurrencyDisplayValue());
-		//gr.cost_per_unit = current.cost_per_unit.getCurrencyDisplayValue();
-		//gr.annual_cost = current.annual_cost.getCurrencyString();
+		gr.cost_per_unit = current.cost_per_unit;
+		gr.annual_cost = current.annual_cost;
 		
 		//gs.addInfoMessage(current.cost_per_unit + ' - ' + current.cost_per_unit.getCurrencyDisplayValue());
 		//gs.addInfoMessage(current.cost_per_unit.getCurrencyString() + ' - ' + gr.cost_per_unit);
@@ -148,6 +154,10 @@ function CloseRecord(){
 		gr.add_to_catalog = current.add_to_catalog;
 		parUpdate = true;
 	}
+	if (current.task ==9){
+		gr.knowledge = current.knowledge;
+		parUpdate = true;
+	}
 	if(parUpdate == true){
 		gr.update();
 	}
@@ -165,7 +175,7 @@ function CloseRecord(){
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>549c13f937540f006f3c8d2754990e81</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>34</sys_mod_count>
         <sys_name>Close Complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -174,7 +184,7 @@ function CloseRecord(){
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_ui_action_549c13f937540f006f3c8d2754990e81</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-04 15:17:54</sys_updated_on>
+        <sys_updated_on>2017-09-01 15:23:21</sys_updated_on>
         <table>x_sigr_non_std_req_nsr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

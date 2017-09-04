@@ -105,4 +105,21 @@
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_price_if_checked</field>
+        <id>cbad543e0fe0030004a6716ce1050ec1</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-08-31 13:13:05</sys_created_on>
+        <sys_id>f833e9ab0ff0030004a6716ce1050e97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-08-31 13:13:05</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
 </record_update>

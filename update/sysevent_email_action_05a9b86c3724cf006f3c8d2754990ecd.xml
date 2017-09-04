@@ -8,7 +8,7 @@
         <affected_field_on_event/>
         <category display_value="Non Standard Request">d9ec50ef377003006f3c8d2754990eba</category>
         <collection>x_sigr_non_std_req_non_standard_request</collection>
-        <condition table="x_sigr_non_std_req_non_standard_request">stateCHANGESTO-9^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="-9"/>
+        <condition table="x_sigr_non_std_req_non_standard_request">stateCHANGESTO-10^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="-10"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -27,8 +27,8 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Hi ${requested_by.first_name}</p>
-<p>Your Request for <strong>${short_description}</strong> has passed all our tests and is now ready install on your machines. One of our technicians will be in contact to schedule a time to install this software</p>
-<p>Regards<br />Siskgroup IT</p>]]></message_html>
+<p>Your Request for <strong>${short_description}</strong> has passed all our tests and is now ready install on your machine(s). Can you please contact me to arrange installation at your earliest convenience.</p>
+<p>Regards<br />${assigned_to.name}<br />Siskgroup IT</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>(NSR) Approved for User Install</name>
@@ -50,7 +50,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>05a9b86c3724cf006f3c8d2754990ecd</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>(NSR) Approved for User Install</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -58,8 +58,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sysevent_email_action_05a9b86c3724cf006f3c8d2754990ecd</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-08-31 08:05:55</sys_updated_on>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-08-31 15:01:20</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>

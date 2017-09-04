@@ -145,6 +145,24 @@
             <sys_updated_on>2017-08-21 19:22:33</sys_updated_on>
             <value>8</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create KB Article</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>8</sequence>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-09-01 14:18:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>3dbbfa3f37b443006f3c8d2754990e29</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-09-01 14:18:47</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>task</element>
             <name>x_sigr_non_std_req_nsr_task</name>

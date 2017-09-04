@@ -24,7 +24,8 @@
         <help_tag>More information</help_tag>
         <help_text/>
         <include_none>false</include_none>
-        <instructions><![CDATA[<p>Please provide as much details about the software package as possible</p>]]></instructions>
+        <instructions><![CDATA[<p>Please give as much detail about the software you are requesting in order to speed up the process.  Some useful data includes (if known) as these may be asked for:</p>
+<ul style="list-style-position: inside;"><li>What does the software do?</li><li>Manufacturer</li><li>Source/Link to find the software</li></ul>]]></instructions>
         <layout>normal</layout>
         <list_table/>
         <lookup_label/>
@@ -61,7 +62,7 @@
         <sys_created_on>2017-06-21 11:47:57</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bd46eba437eb36006f3c8d2754990ef4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Details of Software</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
         <sys_policy/>
@@ -69,7 +70,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>item_option_new_bd46eba437eb36006f3c8d2754990ef4</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-08-16 14:59:27</sys_updated_on>
+        <sys_updated_on>2017-08-31 15:59:28</sys_updated_on>
         <table/>
         <tooltip/>
         <type>23</type>
@@ -99,6 +100,23 @@
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-08-31 13:13:05</sys_created_on>
         <sys_id>fc33e9ab0ff0030004a6716ce1050e88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-08-31 13:13:05</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="EUR">EUR</currency>
+        <field>rec_price_if_checked</field>
+        <id>bd46eba437eb36006f3c8d2754990ef4</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="EUR">EUR</reference_currency>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-08-31 13:13:05</sys_created_on>
+        <sys_id>b833e9ab0ff0030004a6716ce1050e89</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
         <sys_updated_on>2017-08-31 13:13:05</sys_updated_on>

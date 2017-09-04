@@ -8,7 +8,7 @@
         <affected_field_on_event/>
         <category display_value="Non Standard Request">d9ec50ef377003006f3c8d2754990eba</category>
         <collection>x_sigr_non_std_req_non_standard_request</collection>
-        <condition table="x_sigr_non_std_req_non_standard_request">stateCHANGESTO-7^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="-7"/>
+        <condition table="x_sigr_non_std_req_non_standard_request">stateCHANGESTO-8^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="-8"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </condition>
         <content_type>text/html</content_type>
@@ -27,9 +27,31 @@
         <mandatory>false</mandatory>
         <message/>
         <message_html><![CDATA[<p>Hi ${requested_by.first_name}</p>
-<p>Your Request for <strong>${short_description}</strong> has been completed out Initial IT Tests. There is an initial cost of ${cost_per_unit} per install and an annual maintenance cost of ${annual_cost} for this software. This has now been forwarded to you director for approval.</p>
-<p>You can also see the progress of the request on the portal</p>
-<p>Regards<br />Siskgroup IT</p>]]></message_html>
+<p>Your Request for <strong>${short_description}</strong> has been completed our initial test phase.&nbsp; During this assessment we discovered that there are additional costs which need to be approved.&nbsp;</p>
+<p>These are:</p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;Estimated</td>
+<td>&nbsp;Actual</td>
+</tr>
+<tr>
+<td>&nbsp;Install Costs&nbsp;</td>
+<td>&nbsp;${predicted_install_cost}</td>
+<td>&nbsp;${cost_per_unit}</td>
+</tr>
+<tr>
+<td>&nbsp;Annual Maintenance Cost</td>
+<td>&nbsp;${predicted_annual_cost}</td>
+<td>&nbsp;${annual_cost}</td>
+</tr>
+</tbody>
+</table>
+<p>Reason For Difference: ${reason_for_difference}</p>
+<p>This has now been forwarded to your director for approval. Once approved we will setup and test on a test machine before contacting you to install.&nbsp; If it is rejected you will be notified directly.</p>
+<p>You can also see the progress of the request on the portal <a href="https://siskgroup.service-now.com/sp">https://siskgroup.service-now.com/sp</a></p>
+<p>Regards<br />${assigned_to.name}<br />Siskgroup IT</p>]]></message_html>
         <message_list/>
         <message_text/>
         <name>(NSR) Approved for Costs</name>
@@ -51,7 +73,7 @@
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>7d183c2c3724cf006f3c8d2754990e70</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>(NSR) Approved for Costs</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -59,8 +81,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sysevent_email_action_7d183c2c3724cf006f3c8d2754990e70</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2017-08-31 08:05:56</sys_updated_on>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-08-31 15:02:16</sys_updated_on>
         <sys_version>2</sys_version>
         <template/>
         <type>email</type>
