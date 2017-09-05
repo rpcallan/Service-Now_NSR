@@ -6,7 +6,7 @@
             <element>add_to_catalog</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Choice 1</label>
+            <label>Yes</label>
             <language>en</language>
             <name>x_sigr_non_std_req_non_standard_request</name>
             <sequence>0</sequence>
@@ -14,17 +14,17 @@
             <sys_created_on>2017-08-21 19:21:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>59b7935037348380d68998a543990eb3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-08-21 19:21:51</sys_updated_on>
-            <value>Choice 1</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-09-05 16:40:48</sys_updated_on>
+            <value>yes</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>add_to_catalog</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Choice 2</label>
+            <label>No</label>
             <language>en</language>
             <name>x_sigr_non_std_req_non_standard_request</name>
             <sequence>1</sequence>
@@ -32,28 +32,10 @@
             <sys_created_on>2017-08-21 19:21:51</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_id>99b7935037348380d68998a543990eb3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-08-21 19:21:51</sys_updated_on>
-            <value>Choice 2</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>add_to_catalog</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Choice 3</label>
-            <language>en</language>
-            <name>x_sigr_non_std_req_non_standard_request</name>
-            <sequence>2</sequence>
-            <sys_created_by>system</sys_created_by>
-            <sys_created_on>2017-08-21 19:21:51</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_id>d9b7935037348380d68998a543990eb3</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>system</sys_updated_by>
-            <sys_updated_on>2017-08-21 19:21:51</sys_updated_on>
-            <value>Choice 3</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-09-05 16:41:06</sys_updated_on>
+            <value>no</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>add_to_catalog</element>
