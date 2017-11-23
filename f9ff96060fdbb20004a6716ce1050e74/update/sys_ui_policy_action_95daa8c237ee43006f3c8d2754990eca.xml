@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>added_to_approved_list</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-11-21 17:06:00</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>95daa8c237ee43006f3c8d2754990eca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>added_to_approved_list</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_ui_policy_action_95daa8c237ee43006f3c8d2754990eca</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-11-21 17:06:00</sys_updated_on>
+        <table>x_sigr_non_std_req_nsr_task</table>
+        <ui_policy display_value="Add To Catalog">d30300433739cb006f3c8d2754990ea0</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

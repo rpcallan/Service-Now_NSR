@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_sigr_non_std_req_nsr_task</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_sigr_non_std_req_nsr_task">task=10^non_standard_softwareCHANGESTOyes^EQ<item endquery="false" field="task" goto="false" newquery="false" operator="=" or="false" value="10"/>
+            <item endquery="false" field="non_standard_software" goto="false" newquery="false" operator="CHANGESTO" or="false" value="yes"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create Software Request</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	// Add your code here
+	var gr = new GlideRecord('x_sigr_non_std_req_non_standard_request');
+	gr.initialize();
+	gr.short_description = 'Software for ' + current.parent.short_description + ' (' +current.parent.number + ')';
+	gr.u_description_html = 'Software required for ' + current.parent.short_description + ' (' +current.parent.number + ')/n' + current.parent.u_description_html ;
+	gr.parent = current.parent.sys_id;
+	gr.parent_task = current.sys_id;
+	gr.requested_by = current.parent.requested_by;
+	gr.company = current.parent.company;
+	gr.region = current.parent.region;
+	gr.project_no = current.parent.project_no;
+	gr.project_name = current.parent.project_name;
+	gr.assigned_to = current.parent.assigned_to;
+	gr.install_qty = current.parent.install_qty;
+	gr.install_for = current.parent.install_for;
+	gr.justification = current.parent.justification;
+	
+	current.software_request = gr.insert();
+	current.software_request_status = -7;
+	current.update();
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-10-18 10:54:17</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e05d48033779cb006f3c8d2754990e45</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create Software Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_script_e05d48033779cb006f3c8d2754990e45</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-11-13 17:31:58</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+</record_update>

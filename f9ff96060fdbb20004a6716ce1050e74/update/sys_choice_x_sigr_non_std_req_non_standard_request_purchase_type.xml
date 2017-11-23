@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="purchase_type" table="x_sigr_non_std_req_non_standard_request" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purchase_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Once Off</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <sequence>100</sequence>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-10-04 11:11:25</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>526dc4ea0fad830004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-04 11:11:25</sys_updated_on>
+            <value>once_off</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purchase_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Yearly</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <sequence>200</sequence>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-10-04 11:08:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d9ccc8aa0fad830004a6716ce1050e82</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-04 11:11:05</sys_updated_on>
+            <value>per_annum</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purchase_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Quarterly</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <sequence>300</sequence>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-10-04 11:08:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>d28c00ea0fad830004a6716ce1050e2f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-04 11:09:39</sys_updated_on>
+            <value>per_quarter</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>purchase_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Monthly</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <sequence>400</sequence>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-10-04 11:10:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>f22d0caa0fad830004a6716ce1050e72</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-04 11:10:22</sys_updated_on>
+            <value>per_month</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>purchase_type</element>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-10-04 11:08:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>b9ac0caa0fad830004a6716ce1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>purchase_type</sys_name>
+            <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+            <sys_update_name>sys_choice_x_sigr_non_std_req_non_standard_request_purchase_type</sys_update_name>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-04 11:08:07</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

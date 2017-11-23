@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Non-Standard Hardware Request">67a07f770f9d0b0004a6716ce1050ee4</catalog_item>
+        <catalog_variable>IO:5d63fff70f9d0b0004a6716ce1050eeb</catalog_variable>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-10-19 14:21:21</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>dba80a570f790f0004a6716ce1050e26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>project_no</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_dba80a570f790f0004a6716ce1050e26</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-10-19 14:21:21</sys_updated_on>
+        <table/>
+        <ui_policy display_value="ProjectNotListed_onChange">da7886570f790f0004a6716ce1050e6b</ui_policy>
+        <variable>project_no</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

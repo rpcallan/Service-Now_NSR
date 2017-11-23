@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>close.nsrtask</action_name>
+        <active>true</active>
+        <client>true</client>
+        <comments/>
+        <condition>current.state ==2;</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_style/>
+        <hint/>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <name>Close Complete</name>
+        <onclick>mandatoryCheck()</onclick>
+        <order>-400</order>
+        <script><![CDATA[//Client-side 'onclick' function
+function mandatoryCheck(){
+	var task = g_form.getValue('task');
+	var errorMsg = 'Mandatory fields needs to be completed before closing.';
+	
+	//For each tasks, check if the relevant checks are complete and set mandatory fields
+	if(task == 1){
+		if(g_form.getValue('existing_software') == '' || (g_form.getValue('existing_software') == 'yes' && g_form.getValue('alternate_software') == '') ){
+			g_form.setMandatory('existing_software', true);
+			g_form.setMandatory('alternate_software', true);
+			g_form.showFieldMsg('existing_software',errorMsg,'error');
+			return false;
+		}
+	}
+	if(task == 2 && g_form.getValue('vulnerability_risk') == ''){
+		g_form.setMandatory('vulnerability_risk', true);
+		g_form.showFieldMsg('vulnerability_risk',errorMsg,'error');
+		return false;
+	}
+	if(task == 3){
+		if(g_form.getValue('compatibility') == '' || (g_form.getValue('compatibility') == 'issues' && g_form.getValue('compatibility_issue') == '')) {
+			g_form.setMandatory('compatibility', true);
+			if(g_form.getValue('compatibility') == 'issues')
+				g_form.setMandatory('compatibility_issue', true);
+			g_form.showFieldMsg('compatibility',errorMsg,'error');
+			return false;
+		}
+	}
+	if(task == 4){
+		if(g_form.getValue('compliance') == '' || (g_form.getValue('compliance') == 'issues' && g_form.getValue('compliance_issue') == '')){
+			g_form.setMandatory('compliance', true);
+			if(g_form.getValue('compliance') == 'issues')
+				g_form.setMandatory('compliance_issue', true);
+			g_form.showFieldMsg('compliance',errorMsg,'error');
+			return false;
+		}
+	}
+	if(task == 5){
+		var costs = g_form.getValue('costs');
+		if(costs == ''){
+			g_form.setMandatory('costs', true);
+			g_form.showFieldMsg('costs',errorMsg,'error');
+			return false;
+		}
+		var preIns = g_form.getValue('predicted_install_cost').split(';');
+		var preAnn = g_form.getValue('predicted_annual_cost').split(';');
+		var actIns = g_form.getValue('cost_per_unit').split(';');
+		var actAnn = g_form.getValue('annual_cost').split(';');
+		
+		if(costs == 'no' && (actAnn > preAnn || actIns > preIns)){
+			g_form.showFieldMsg('costs','Actual Costs are Greater than Predicted Costs','error');
+			return false;
+		}
+		
+		if(costs == 'yes' && (actAnn <= preAnn && actIns <= preIns)){
+			g_form.showFieldMsg('costs','Predicted Costs are Greater than Actual Costs','error');
+			return false;
+		}
+	}
+	if(task == 6){
+		if(g_form.getValue('it_testing') == '' || (g_form.getValue('it_testing') == 'issues' && g_form.getValue('it_testing_summary') == '')){
+			g_form.setMandatory('it_testing', true);
+			if(g_form.getValue('it_testing') == 'issues')
+				g_form.setMandatory('it_testing_summary', true);
+			g_form.showFieldMsg('it_testing',errorMsg,'error');
+			return false;
+		}
+	}
+	
+	if(task == 10){
+		if(g_form.getValue('software_required') == ''){
+			g_form.setMandatory('software_required', true);
+			g_form.showFieldMsg('software_required',errorMsg,'error');
+			return false;
+		}
+		
+		if(g_form.getValue('software_required') != '' && g_form.getValue('non_standard_software') == ''){
+			g_form.setMandatory('non_standard_software', true);
+			g_form.showFieldMsg('non_standard_software',errorMsg,'error');
+			return false;
+		}
+		
+		if(g_form.getValue('non_standard_software') == 'yes' && (g_form.getValue('software_request_state') != 'Closed Complete' && g_form.getValue('software_request_state') != 'Closed Incomplete')) {
+			g_form.showFieldMsg('software_request_state','Task cannot be closed until the related Software Request is closed','error');
+			return false;
+		}
+		if(g_form.getValue('software_checks_summary') == ''){
+			g_form.setMandatory('software_checks_summary', true);
+			g_form.showFieldMsg('software_checks_summary',errorMsg,'error');
+			return false;
+		}
+	}
+	
+	//Call the UI Action and skip the 'onclick' function
+	gsftSubmit(null, g_form.getFormElement(), 'close.nsrtask'); //MUST call the 'Action name' set in this UI Action
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if(typeof window == 'undefined')
+	CloseRecord();
+
+function CloseRecord(){
+	//for each task, copy the relevant fields to the parent and close task
+	var gr = new GlideRecord('x_sigr_non_std_req_non_standard_request');
+	gr.get(current.parent);
+	
+	var parUpdate = false;
+	
+	if (current.task == 1){
+		gr.existing_software = current.existing_software;
+		gr.alternate_software = current.alternate_software;
+		parUpdate = true;
+	}
+	if (current.task == 2){
+		gr.vulnerability_risk = current.vulnerability_risk;
+		gr.vulnerability_summary = current.vulnerability_summary;
+		parUpdate = true;
+	}
+	if (current.task == 3){
+		gr.compatibility = current.compatibility;
+		gr.compatibility_issue = current.compatibility_issue;
+		parUpdate = true;
+	}
+	if (current.task == 4){
+		gr.compliance = current.compliance;
+		gr.compliance_issue = current.compliance_issue;
+		parUpdate = true;
+	}
+	if (current.task == 5){
+		gr.costs = current.costs;
+		gr.reason_for_difference = current.reason_for_difference;
+		gr.costs_added = true;
+		gr.cost_per_unit = current.cost_per_unit;
+		gr.annual_cost = current.annual_cost;
+		
+		//gs.addInfoMessage(current.cost_per_unit + ' - ' + current.cost_per_unit.getCurrencyDisplayValue());
+		//gs.addInfoMessage(current.cost_per_unit.getCurrencyString() + ' - ' + gr.cost_per_unit);
+		parUpdate = true;
+	}
+	if (current.task == 6){
+		gr.it_testing = current.it_testing;
+		gr.it_testing_summary = current.it_testing_summary;
+		parUpdate = true;
+	}
+	
+	if (current.task ==7){
+		gr.user_install = current.user_install;
+		parUpdate = true;
+	}
+	if (current.task ==8){
+		gr.add_to_catalog = current.add_to_catalog;
+		gr.added_to_approved_list = current.added_to_approved_list.getDisplayValue();
+		parUpdate = true;
+	}
+	if (current.task ==9){
+		gr.kbas = 'No';
+		if(current.knowledge == true){
+			gr.kbas = 'Yes';
+		}
+		parUpdate = true;
+	}
+	if (current.task == 10){
+		gr.software_required = current.software_required.getDisplayValue();
+		gr.non_standard_software = current.non_standard_software.getDisplayValue();
+		gr.software_checks_summary = current.software_checks_summary;
+		gr.software_request = current.software_request;
+		gr.software_request_status = current.software_request_state;
+		parUpdate = true;
+	}
+	if(parUpdate == true){
+		gr.update();
+	}
+	
+	current.state = 3;
+	current.update();
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-08-01 15:33:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>549c13f937540f006f3c8d2754990e81</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>Close Complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_ui_action_549c13f937540f006f3c8d2754990e81</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-11-22 17:17:57</sys_updated_on>
+        <table>x_sigr_non_std_req_nsr_task</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

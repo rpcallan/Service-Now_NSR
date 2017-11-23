@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_sigr_non_std_req_non_standard_request</collection>
+        <email_layout display_value="Sisk Email">8df8be160fb98b0004a6716ce1050e3f</email_layout>
+        <message/>
+        <message_html><![CDATA[<p>Hi ${requested_by.first_name}</p>
+<p>Request ${mail_script:sp_ticket_link}for <strong>${short_description}</strong> has been completed our initial test phase.&nbsp; During this assessment we discovered that there are additional costs which need to be approved.&nbsp;</p>
+<p>These are:</p>
+<p>${mail_script:nsr.costs}</p>
+<p>This has now been forwarded to your director for approval. Once approved we will setup and test on a test machine before contacting you to install.&nbsp; If it is rejected you will be notified directly.</p>
+<p>You can view the progress of the request by clicking on the request number above or vising the IT Service Portal <a href="https://siskgroup.service-now.com/sp">https://siskgroup.service-now.com/sp</a></p>
+<p>Regards<br />${assigned_to.name}<br />Siskgroup IT</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>NSR Costs</name>
+        <sms_alternate/>
+        <subject>Non Standard Request ${Number} is ready for security and compatibility testing</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-11-20 10:47:53</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>78294a25376243006f3c8d2754990e3f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>NSR Costs</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sysevent_email_template_78294a25376243006f3c8d2754990e3f</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-11-20 11:17:40</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

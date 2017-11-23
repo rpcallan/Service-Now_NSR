@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>existing_software</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-10-17 14:02:51</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c8313f260f35cb0004a6716ce1050ece</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>existing_software</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_ui_policy_action_c8313f260f35cb0004a6716ce1050ece</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-10-18 10:35:35</sys_updated_on>
+        <table>x_sigr_non_std_req_nsr_task</table>
+        <ui_policy display_value="Existing Software/Hardware">810033260f35cb0004a6716ce1050e38</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

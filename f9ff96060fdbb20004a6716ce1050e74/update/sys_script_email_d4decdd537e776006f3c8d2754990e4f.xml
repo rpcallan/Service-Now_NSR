@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>nsr_sysapproval_approver_script</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+/* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+/* Optional GlideRecord */ event) {
+	
+	//get request details
+	var gr = new GlideRecord('x_sigr_non_std_req_non_standard_request');
+	gr.get(current.sysapproval);
+	
+	var state = gr.state;
+	var insLbl = 'Install Cost';
+	var annLbl = 'Annual Cost';
+	var preInsLbl = 'Predicted Install Cost';
+	var actInsLbl = 'Actual Install Cost';
+	var preAnnLbl = 'Predicted Annual Cost';
+	var actAnnLbl = 'Actual Annual Cost';
+	var preInsVal = gr.predicted_install_cost.getCurrencyDisplayValue();
+	var actInsVal = gr.cost_per_unit.getCurrencyDisplayValue();
+	var preAnnVal = gr.predicted_annual_cost.getCurrencyDisplayValue();
+	var actAnnVal = gr.annual_cost.getCurrencyDisplayValue();
+	var cat = gr.category.getDisplayValue();
+	var parent = gr.parent;
+	
+	if(gr.category == 'hardware'){
+		insLbl = 'Purchase Cost';
+		annLbl = 'Subscription/Support Cost';
+		preInsLbl = 'Predicted Purchase Cost';
+		actInsLbl = 'Actual Purchase Cost';
+		preAnnLbl = 'Predicted Subscription/Support Cost';
+		actAnnLbl = 'Actual Subscription/Support Cost';
+		//preInsVal += gr.purchase_type.getDisplayValue();
+		//actInsVal += gr.purchase_type.getDisplayValue();
+		preAnnVal += ' ' + gr.subscription_type.getDisplayValue();
+		actAnnVal += ' ' + gr.subscription_type.getDisplayValue();
+	}
+	
+	//awaiting Director approval
+	if(state == -5){
+		template.print('<p>We currently have an "Approved" list of ' + gr.category + ' which has been approved based on standardisation, testing on our devices, and security vulnerabilities</p>');
+		template.print('<p>A Non Standard Request has been created by someone in your business unit, and we are looking for your approval to proceed. We ask this in the first instance to make you aware that the request has been made, as there may already be a company specified alternative, but also to allow for justification of any costs that are known.</p>');
+		template.print('<p>Please review the details below and select the links at the bottom of this email to approve or reject this request. If you are rejecting the request an email will go to the end user with the details you put into the email as to why it is rejected.</p>');
+		template.print('<p>If accepted, we will move to an assessment phase where we will test the software.</p>');
+		
+		template.print('<table width="800">');
+		template.print('<tr><td class="field-label" width="30%">Requested By:</td><td class="form-control">' + gr.requested_by.getDisplayValue() + '</td></tr>');
+		template.print('<tr><td class="field-label">Name of ' + cat + ':</td><td class="form-control">' + gr.short_description + '</td></tr>');
+		template.print('<tr><td class="field-label">Description:</td><td class="form-control text-area">' + gr.u_description_html + '</td></tr>');
+		template.print('<tr><td class="field-label">Justification:</td><td class="form-control text-area">' + gr.justification + '</td></tr>');
+		template.print('<tr><td class="field-label">' + preInsLbl + ':</td><td class="form-control">' + preInsVal + '</td></tr>');
+		template.print('<tr><td class="field-label">' + preAnnLbl + ':</td><td class="form-control">' + preAnnVal + '</td></tr>');
+		template.print('</table>');
+	}
+	
+	//awaiting IT
+	if(state == -6){
+		var approver = '';
+		var comments = '';
+		var app = new GlideRecord('sysapproval_approver');
+		app.addQuery('sysapproval', gr.sys_id);
+		app.addQuery('state', 'approved');
+		app.orderByDesc('sys_created_on');
+		app.query();
+		if (app.next()){
+			approver = app.approver.getDisplayValue();
+			comments = app.comments.getJournalEntry(-1);
+		}
+		template.print('<p>A Non Standard Request has been created and approved by a valid Business Unit Director. Can you assess please and agree if this is a valid Non-standard request or not.</p>');
+		template.print('<p>The details are below with links at the bottom of this email to approve or reject this request. (If you are rejecting the request, please provide details in the email body)</p>');
+		
+		template.print('<table width="800">');
+		template.print('<tr><td class="field-label" width="30%">Requested By:</td><td class="form-control">' + gr.requested_by.getDisplayValue() + '</td></tr>');
+		template.print('<tr><td class="field-label">BUD Approver:</td><td class="form-control">' + approver + '</td></tr>');
+		template.print('<tr><td class="field-label">Name of ' + cat + ':</td><td class="form-control">' + gr.short_description + '</td></tr>');
+		template.print('<tr><td class="field-label">Description:</td><td class="form-control text-area">' + gr.u_description_html + '</td></tr>');
+		template.print('<tr><td class="field-label">Justification:</td><td class="form-control text-area">' + gr.justification + '</td></tr>');
+		template.print('<tr><td class="field-label">' + preInsLbl + ':</td><td class="form-control">' + preInsVal + '</td></tr>');
+		template.print('<tr><td class="field-label">' + preAnnLbl + ':</td><td class="form-control">' + preAnnVal + '</td></tr>');
+		template.print('<tr><td class="field-label">Comments:</td><td class="form-control text-area">' + comments + '</td></tr>');
+		template.print('</table>');
+	}
+	
+	//initial checks
+	if(state == -7){
+		var costs = gr.costs;
+		var category = gr.category;
+		
+		template.print('<p>The Non-standard request for <strong>' + gr.short_description + '</strong> has completed Initial Checks, an output of which is below.</p>');
+		template.print('<p>Can you please review and decide if it is appropriate to approve this software.</p>');
+		
+		template.print('<table width="800">');
+		template.print('<tr><td class="field-label" width="30%">Vulnerability Score:</td><td class="form-control">' + gr.vulnerability_risk + '</td></tr>');
+		template.print('<tr><td class="field-label">Vulnerability Summary:</td><td class="form-control text-area">' + gr.vulnerability_summary + '</td></tr>');
+		template.print('<tr><td class="field-label">Compatibility:</td><td class="form-control">' + gr.compatibility.getDisplayValue() + '</td></tr>');
+		template.print('<tr><td class="field-label">Compatibility Summary:</td><td class="form-control text-area">' + gr.compatibility_issue + '</td></tr>');
+		if(category == 'software'){
+			template.print('<tr><td class="field-label">Compliance:</td><td class="form-control">' + gr.compliance.getDisplayValue() + '</td></tr>');
+			template.print('<tr><td class="field-label">Compliance Summary:</td><td class="form-control text-area">' + gr.compliance_issue + '</td></tr>');
+		}
+		template.print('<tr><td class="field-label">Existing ' + cat + ':</td><td class="form-control">' + gr.existing_software.getDisplayValue() + '</td></tr>');
+		template.print('<tr><td class="field-label">Alternate ' + cat + ':</td><td class="form-control">' + gr.alternate_software + '</td></tr>');
+		if(parent == ''){
+			template.print('<tr><td class="field-label">Are Costs Creater:</td><td class="form-control">' + gr.costs.getDisplayValue() + '</td></tr>');
+			template.print('<tr><td class="field-label">Reason For Cost Difference:</td><td class="form-control text-area">' + gr.reason_for_difference + '</td></tr>');
+			if(costs == 'yes'){
+				template.print('<tr><td class="field-label">' + preInsLbl + ':</td><td class="form-control">' + preInsVal + '</td></tr>');
+				template.print('<tr><td class="field-label">' + actInsLbl + ':</td><td class="form-control">' + actInsVal + '</td></tr>');
+				template.print('<tr><td class="field-label">' + preAnnLbl + ':</td><td class="form-control">' + preAnnVal + '</td></tr>');
+				template.print('<tr><td class="field-label">' + actAnnLbl + ':</td><td class="form-control">' + actAnnVal + '</td></tr>');
+			}
+		}
+		if(category == 'hardware'){
+			var software = gr.software_required;
+			template.print('<tr><td class="field-label">Software Required</td><td class="form-control">' + software + '</td></tr>');
+			if(software == 'Yes'){
+				var nsr = gr.non_standard_software;
+				template.print('<tr><td class="field-label">Non Standard Software</td><td class="form-control">' + nsr + '</td></tr>');
+				if(nsr == 'Yes'){
+					template.print('<tr><td class="field-label">Request Number</td><td class="form-control">' + gr.software_request.number + '</td></tr>');
+					template.print('<tr><td class="field-label">Request Status</td><td class="form-control">' + gr.software_request_status + '</td></tr>');
+				}
+			}
+			template.print('<tr><td class="field-label">Software Summary</td><td class="form-control text-area">' + gr.software_checks_summary + '</td></tr>');
+		}
+		template.print('</table>');
+	}
+	
+	//awaiting cost approval
+	if(state == -8){
+		template.print('<p>You previously approved the request for <strong>' + gr.short_description + '</strong> but as part of the process we have identified that the previously understood costs were incorrect.</p>');
+		template.print('<p>Before we move into the next phase of testing we need you to re-approve the request on the basis of the new costs. Those costs are listed below.</p>');
+		
+		template.print('<p>If you have any queries on these costs please contact ' + gr.assigned_to.getDisplayValue() + ' to discuss further.</p>');
+		
+		template.print('<table style="border: 1px solid #707070; padding: 3px 7px 2px 7px">');
+		template.print('<tr><td></td><td class="field-label">Estimated:</td><td class="field-label">Actual:</td></tr>');
+		template.print('<tr><td class="field-label">' + insLbl + ':</td><td class="form-control">' + preInsVal + '</td><td class="form-control">' + actInsVal + '</td></tr>');
+		template.print('<tr><td class="field-label">' + annLbl + ':</td><td class="form-control">' + preAnnVal + '</td><td class="form-control">' + actAnnVal + '</td></tr>');
+		template.print('</table>');
+		template.print('<p></p>');
+		template.print('<table><tr><td class="field-label">Reason for cost difference:</td>');
+		template.print('<td class="form-control text-area">' + gr.reason_for_difference + '</td></tr></table>');
+	}
+	
+	//IT Testing
+	if(state == -9){
+		template.print('<p>The Non-standard request for <strong>' + gr.short_description + '</strong> has completed IT Testing and the below test comments are noted.</p>');
+		
+		template.print('<table width="800">');
+		template.print('<tr><td class="field-label" width="30%">IT Testing:</td><td class="form-control">' + gr.it_testing.getDisplayValue()  + '</td></tr>');
+		template.print('<tr><td class="field-label">IT Testing Summary</td><td class="form-control text-area">' + gr.it_testing_summary + '</td></tr>');
+		
+		template.print('</table>');
+	}
+	
+	template.print('<p>A decision is required on final approval - please select if you are approving or rejecting this request or if you need to discuss further let me know. </p>');
+	
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-06-23 11:02:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d4decdd537e776006f3c8d2754990e4f</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>nsr_sysapproval_approver_script</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_script_email_d4decdd537e776006f3c8d2754990e4f</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-11-20 11:05:55</sys_updated_on>
+    </sys_script_email>
+</record_update>
