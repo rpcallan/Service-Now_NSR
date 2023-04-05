@@ -4,6 +4,7 @@
         <angular_module/>
         <formatter>com_glideapp_questionset_default_question_editor</formatter>
         <name>Non Standard Request Variable Editor</name>
+        <seismic_component/>
         <sys_class_name>sys_ui_formatter</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-10-18 15:45:26</sys_created_on>

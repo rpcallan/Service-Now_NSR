@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
     <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
         <disabled>false</disabled>
         <field>parent_task</field>
         <mandatory>ignore</mandatory>
@@ -18,7 +19,7 @@
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
         <sys_updated_on>2017-11-15 12:17:01</sys_updated_on>
         <table>x_sigr_non_std_req_non_standard_request</table>
-        <ui_policy display_value="Parent">342c0817370a87006f3c8d2754990e33</ui_policy>
+        <ui_policy display_value="Has No Parent">342c0817370a87006f3c8d2754990e33</ui_policy>
         <visible>false</visible>
     </sys_ui_policy_action>
 </record_update>

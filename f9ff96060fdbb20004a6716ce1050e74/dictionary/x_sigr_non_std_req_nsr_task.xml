@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="19d52e7637d44f006f3c8d2754990ef9" extends="task" label="NSR Task" max_length="40" name="x_sigr_non_std_req_nsr_task" text_index="true" type="collection">
+        <element choice="1" label="Added to Approved List" max_length="40" name="added_to_approved_list" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="100" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="200" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Add To Catalog" max_length="40" name="add_to_catalog" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Alternate Hardware/Software" max_length="250" name="alternate_software" type="string"/>
+        <element attributes="omit_sys_original=true" label="Annual Cost" max_length="15" name="annual_cost" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compatibility" max_length="40" name="compatibility" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element inactive_on_update="false" label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Compatibility Issue" max_length="1000" name="compatibility_issue" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compliance" max_length="40" name="compliance" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element inactive_on_update="false" label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Compliance Issue" max_length="1000" name="compliance_issue" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Is Cost Greater" max_length="40" name="costs" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="omit_sys_original=true" label="Install Cost" max_length="15" name="cost_per_unit" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Existing Hardware/Software" max_length="40" name="existing_software" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="IT Testing" max_length="40" name="it_testing" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element inactive_on_update="false" label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="IT Testing Issue" max_length="1000" name="it_testing_summary" type="string"/>
+        <element choice="1" label="Non Standard Software" max_length="40" name="non_standard_software" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="100" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="200" value="no"/>
+            </choice>
+        </element>
+        <element label="Predicted Annual Cost" max_length="15" name="predicted_annual_cost" type="price"/>
+        <element label="Predicted Install Cost" max_length="15" name="predicted_install_cost" type="price"/>
+        <element label="Reason For Difference" max_length="1000" name="reason_for_difference" type="string"/>
+        <element label="Software Checks Summary" max_length="1000" name="software_checks_summary" type="string"/>
+        <element label="Software Request" max_length="32" name="software_request" read_only="true" reference="x_sigr_non_std_req_non_standard_request" type="reference"/>
+        <element label="Software Request State" max_length="40" name="software_request_state" type="string"/>
+        <element choice="1" label="Software Required" max_length="40" name="software_required" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="100" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="200" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Task" max_length="40" name="task" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Existing Hardware/Software" sequence="0" value="1"/>
+                <element inactive_on_update="false" label="Vulnerability Checks" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Compatibility Checks" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Licensing Compliance" sequence="3" value="4"/>
+                <element inactive_on_update="false" label="Cost Checks" sequence="4" value="5"/>
+                <element inactive_on_update="false" label="Software Checks" sequence="5" value="10"/>
+                <element inactive_on_update="false" label="IT Testing" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="User Install" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="Add to Catalog" sequence="8" value="8"/>
+                <element inactive_on_update="false" label="Create KB Article" sequence="9" value="9"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="User Install" max_length="40" name="user_install" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Connect To Network" max_length="40" name="u_network" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="TMT Network Summary" max_length="1000" name="u_network_summary" type="string"/>
+        <element label="Vulnerability Score" max_length="15" name="vulnerability_risk" type="decimal"/>
+        <element label="Vulnerability Summary" max_length="1000" name="vulnerability_summary" type="string"/>
+    </element>
+</database>

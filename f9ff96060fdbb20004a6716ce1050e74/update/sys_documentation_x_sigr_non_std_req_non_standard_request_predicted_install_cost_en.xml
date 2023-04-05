@@ -12,7 +12,6 @@
             <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
             <sys_created_on>2017-08-17 13:37:30</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>8e8225430fa8030004a6716ce1050ef1</sys_id>
             <sys_mod_count>1</sys_mod_count>
             <sys_name>Predicted Purchase Cost</sys_name>
             <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>

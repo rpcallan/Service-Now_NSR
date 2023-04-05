@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="task" table="x_sigr_non_std_req_nsr_task" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>task</element>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>task</sys_name>
+            <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+            <sys_update_name>sys_choice_x_sigr_non_std_req_nsr_task_task</sys_update_name>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-08-21 19:22:33</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Existing Hardware/Software</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-17 12:54:49</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Vulnerability Checks</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-08-21 19:22:33</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Compatibility Checks</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-08-21 19:22:33</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Licensing Compliance</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-08-21 19:22:33</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cost Checks</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>system</sys_updated_by>
+            <sys_updated_on>2017-08-21 19:22:33</sys_updated_on>
+            <value>5</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Software Checks</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-10-17 12:55:44</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-17 12:57:48</sys_updated_on>
+            <value>10</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IT Testing</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-17 12:57:09</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>User Install</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-17 12:57:00</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Add to Catalog</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-08-21 19:22:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-17 12:56:46</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>task</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Create KB Article</label>
+            <language>en</language>
+            <name>x_sigr_non_std_req_nsr_task</name>
+            <sequence>9</sequence>
+            <synonyms/>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2017-09-04 16:49:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-10-17 12:56:36</sys_updated_on>
+            <value>9</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

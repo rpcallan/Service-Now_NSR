@@ -12,7 +12,6 @@
             <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
             <sys_created_on>2017-10-18 08:26:05</sys_created_on>
             <sys_customer_update>false</sys_customer_update>
-            <sys_id>f0dd6b7e37f5cb006f3c8d2754990ea9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>Software Checks Summary</sys_name>
             <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>

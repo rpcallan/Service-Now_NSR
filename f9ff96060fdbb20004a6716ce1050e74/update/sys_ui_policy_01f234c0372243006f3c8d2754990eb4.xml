@@ -2,12 +2,13 @@
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
         <conditions table="x_sigr_non_std_req_non_standard_request">parentISEMPTY^category=software^EQ<item endquery="false" field="parent" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-            <item endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="software"/>
+            <item display_value="Software" endquery="false" field="category" goto="false" newquery="false" operator="=" or="false" value="software"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
         <global>true</global>
         <inherit>false</inherit>
+        <isolate_script>false</isolate_script>
         <model_id/>
         <model_table/>
         <on_load>true</on_load>

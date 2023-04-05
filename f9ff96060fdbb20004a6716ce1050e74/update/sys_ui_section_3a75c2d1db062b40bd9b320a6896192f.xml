@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Admin" section_id="3a75c2d1db062b40bd9b320a6896192f" sys_domain="global" table="x_sigr_non_std_req_non_standard_request" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_approval_date</element>
+            <position>0</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2019-01-21 12:32:53</sys_created_on>
+            <sys_id>b8a16147db0367c0a1cde2e15b96190c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Admin" display_value="Admin" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="Default view">3a75c2d1db062b40bd9b320a6896192f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2019-01-21 12:32:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2019-01-21 12:32:53</sys_created_on>
+            <sys_id>78a1a147db0367c0a1cde2e15b9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Admin" display_value="Admin" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="Default view">3a75c2d1db062b40bd9b320a6896192f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2019-01-21 12:32:53</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>active</element>
+            <position>2</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2019-01-21 12:32:53</sys_created_on>
+            <sys_id>f8a1a147db0367c0a1cde2e15b9619a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Admin" display_value="Admin" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="Default view">3a75c2d1db062b40bd9b320a6896192f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2019-01-21 12:32:53</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Admin</caption>
+            <header>false</header>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>j.dixon@siskgroup.ie</sys_created_by>
+            <sys_created_on>2018-11-27 11:37:19</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>3a75c2d1db062b40bd9b320a6896192f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sigr_non_std_req_non_standard_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+            <sys_update_name>sys_ui_section_3a75c2d1db062b40bd9b320a6896192f</sys_update_name>
+            <sys_updated_by>j.dixon@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2018-11-27 11:37:19</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

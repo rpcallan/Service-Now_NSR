@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_sigr_non_std_req.SISK_NSR</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>SISK_NSR</name>
+        <script><![CDATA[var SISK_NSR = Class.create();
+SISK_NSR.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	//get company name based on sys_id
+	getUserDetails: function() {
+		var sys_id = this.getParameter('sysparm_id');
+		var gr = new GlideRecord('sys_user');
+		gr.get(sys_id);
+		var name = gr.company + '|';
+		name += gr.x_sigr_sisk_hr_co_business_unit;
+		return name;
+	},
+	
+	//get company name based on sys_id
+	getCompanyType: function() {
+		var sys_id = this.getParameter('sysparm_id');
+		var gr = new GlideRecord('core_company');
+		gr.get(sys_id);
+		
+		
+		gs.info('NSR - id : {0} type = {1}', sys_id, gr.x_sigr_sisk_hr_co_customer_type );
+		
+		return gr.x_sigr_sisk_hr_co_customer_type;
+	},
+	
+	type: 'SISK_NSR'
+});
+
+//example of how to use
+//var ga = new GlideAjax('Sisk_NSR'); This argument should be the exact name of the script include.
+//ga.addParam('sysparm_name', 'getUserDetails'); sysparm_name is the name of the function in the script include to call.
+//ga.addParam('sysparm_mi_id', 'value'); //This is an optional parameter which we can reference in the script include.
+//ga.getXML(myCallBack); //This is our callback function, which will process the response.
+
+//function myCallBack(response) { the argument 'response' is automatically provided
+//var greeting = response.responseXML.documentElement.getAttribute('answer'); get the value returned by thr script include
+//alert(greeting); //alert the result to make sure all is well.
+//}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-06-21 15:41:02</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7c70dc78372f36006f3c8d2754990eef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SISK_NSR</sys_name>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_script_include_7c70dc78372f36006f3c8d2754990eef</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-06-21 15:57:50</sys_updated_on>
+    </sys_script_include>
+</record_update>

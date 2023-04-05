@@ -13,6 +13,7 @@
         <description/>
         <field/>
         <global>true</global>
+        <isolate_script>false</isolate_script>
         <messages/>
         <name>ConnectionTypeOnChange</name>
         <order/>

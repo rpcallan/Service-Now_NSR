@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true,hasLabels=true,hasWorkflow=true" audit="true" db_object_id="d710a2ca0fdbb20004a6716ce1050e21" extends="task" label="Non Standard Request" max_length="40" name="x_sigr_non_std_req_non_standard_request" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Added to Approved List" max_length="40" name="added_to_approved_list" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Added To Catalog" max_length="40" name="add_to_catalog" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Alternate Software/Hardware" max_length="1000" name="alternate_software" read_only="true" type="string"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Annual Cost" max_length="15" name="annual_cost" type="price"/>
+        <element choice="1" default="software" label="Category" max_length="40" name="category" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Software" sequence="100" value="software"/>
+                <element inactive_on_update="false" label="Hardware" sequence="200" value="hardware"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compatibility" max_length="40" name="compatibility" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element inactive_on_update="false" label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Compatibility Issue Summary" max_length="1000" name="compatibility_issue" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Compliance" max_length="40" name="compliance" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element inactive_on_update="false" label="No" sequence="2" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Compliance Issue Summary" max_length="1000" name="compliance_issue" read_only="true" type="string"/>
+        <element choice="1" label="Connection Type" max_length="40" name="connection_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Network" sequence="100" value="network"/>
+                <element inactive_on_update="false" label="Stand Alone" sequence="200" value="stand_alone"/>
+            </choice>
+        </element>
+        <element choice="1" label="Cost Greater" max_length="40" name="costs" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Costs Added" max_length="40" name="costs_added" type="boolean"/>
+        <element label="Purchase Cost" max_length="15" name="cost_per_unit" type="price"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Existing Software/Hardware" max_length="40" name="existing_software" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element label="Has Software" max_length="40" name="has_software" read_only="true" type="boolean"/>
+        <element label="Install For" max_length="1000" name="install_for" read_only="true" reference="sys_user" type="glide_list"/>
+        <element label="Install Qty" max_length="2" name="install_qty" read_only="true" type="integer"/>
+        <element choice="1" label="IT Testing" max_length="40" name="it_testing" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="Yes (With Issues)" sequence="1" value="issues"/>
+                <element inactive_on_update="false" label="No" sequence="3" value="no"/>
+            </choice>
+        </element>
+        <element label="IT Testing Issue Summary" max_length="1000" name="it_testing_summary" read_only="true" type="string"/>
+        <element label="Justification" max_length="4000" name="justification" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="KBA's Added/Updated" max_length="40" name="kbas" read_only="true" type="string"/>
+        <element label="Network Details" max_length="4000" name="network_details" type="string"/>
+        <element label="Non Standard Software" max_length="40" name="non_standard_software" read_only="true" type="string"/>
+        <element label="Parent Task" max_length="32" name="parent_task" reference="x_sigr_non_std_req_nsr_task" type="reference"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Predicted Annual Cost" max_length="15" name="predicted_annual_cost" type="price"/>
+        <element attributes="omit_sys_original=true,serializer=com.glide.script.PriceXMLSerializer" label="Predicted Purchase Cost" max_length="15" name="predicted_install_cost" type="price"/>
+        <element label="Project" max_length="32" name="project" reference="x_sigr_sisk_hr_co_coins_projects" type="reference"/>
+        <element label="Project Name" max_length="100" name="project_name" read_only="true" type="string"/>
+        <element label="Project No" max_length="10" name="project_no" read_only="true" type="string"/>
+        <element choice="1" label="Purchase Type" max_length="40" name="purchase_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Once Off" sequence="100" value="once_off"/>
+                <element inactive_on_update="false" label="Yearly" sequence="200" value="per_annum"/>
+                <element inactive_on_update="false" label="Quarterly" sequence="300" value="per_quarter"/>
+                <element inactive_on_update="false" label="Monthly" sequence="400" value="per_month"/>
+            </choice>
+        </element>
+        <element label="Reason For Difference" max_length="1000" name="reason_for_difference" read_only="true" type="string"/>
+        <element label="Recurring Cost" max_length="40" name="recurring_cost" type="boolean"/>
+        <element label="Recurring Costs" max_length="40" name="recurring_costs" type="boolean"/>
+        <element label="Region" max_length="32" name="region" read_only="true" reference="x_sigr_sisk_hr_co_region_division" type="reference"/>
+        <element label="Requested By" max_length="32" name="requested_by" read_only="true" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Software Checks Summary" max_length="1000" name="software_checks_summary" read_only="true" type="string"/>
+        <element label="Software Details" max_length="4000" name="software_details" type="string"/>
+        <element label="Software Request" max_length="32" name="software_request" read_only="true" reference="x_sigr_non_std_req_non_standard_request" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Software Request Status" max_length="40" name="software_request_status" read_only="true" type="string"/>
+        <element label="Software Required" max_length="40" name="software_required" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Software Type" max_length="40" name="software_type" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Freeware" sequence="0" value="0"/>
+                <element inactive_on_update="false" label="Licensed Software" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Unknown" sequence="2" value="2"/>
+            </choice>
+        </element>
+        <element choice="1" label="Subscription Type" max_length="40" name="subscription_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Once Off" sequence="100" value="once_off"/>
+                <element inactive_on_update="false" label="Yearly" sequence="200" value="per_annum"/>
+                <element inactive_on_update="false" label="Quarterly" sequence="300" value="per_quarter"/>
+                <element inactive_on_update="false" label="Monthly" sequence="400" value="per_month"/>
+            </choice>
+        </element>
+        <element label="Unknown Cost" max_length="40" name="unknown_cost" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="User Installed" max_length="40" name="user_install" read_only="true" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Yes" sequence="0" value="yes"/>
+                <element inactive_on_update="false" label="No" sequence="1" value="no"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Network Connected" max_length="40" name="u_network" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="TMT Network Summary" max_length="1000" name="u_network_summary" read_only="true" type="string"/>
+        <element label="Vulnerability Score" max_length="15" name="vulnerability_risk" read_only="true" type="decimal"/>
+        <element attributes="edge_encryption_enabled=true" label="Vulnerability Summary" max_length="1000" name="vulnerability_summary" read_only="true" type="string"/>
+    </element>
+</database>

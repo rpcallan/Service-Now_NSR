@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Initial Checks" section_id="3c28309a0f58030004a6716ce1050e9f" sys_domain="global" table="x_sigr_non_std_req_non_standard_request" version="3" view="user">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>existing_software</element>
+            <position>0</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>cd28309a0f58030004a6716ce1050ea4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compatibility</element>
+            <position>1</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>4128309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compliance</element>
+            <position>2</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>c128309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vulnerability_risk</element>
+            <position>3</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>4528309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>4</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>c528309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>alternate_software</element>
+            <position>5</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>4928309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compatibility_issue</element>
+            <position>6</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>c928309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compliance_issue</element>
+            <position>7</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>4d28309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cost_per_unit</element>
+            <position>8</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>cd28309a0f58030004a6716ce1050ea5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>annual_cost</element>
+            <position>9</position>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:09</sys_created_on>
+            <sys_id>4128309a0f58030004a6716ce1050ea6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Initial Checks" display_value="Initial Checks" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="b828309a0f58030004a6716ce1050e9e">3c28309a0f58030004a6716ce1050e9f</sys_ui_section>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:09</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Initial Checks</caption>
+            <header>false</header>
+            <name>x_sigr_non_std_req_non_standard_request</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+            <sys_created_on>2017-08-02 16:21:08</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>3c28309a0f58030004a6716ce1050e9f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sigr_non_std_req_non_standard_request</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+            <sys_update_name>sys_ui_section_3c28309a0f58030004a6716ce1050e9f</sys_update_name>
+            <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2017-08-02 16:21:08</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="user" name="user">b828309a0f58030004a6716ce1050e9e</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

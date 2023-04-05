@@ -5,7 +5,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_sigr_non_std_req_non_standard_request">stateNOT IN1,-5,-6,-8,3,4,7^active=true^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="1,-5,-6,-8,3,4,7"/>
+        <filter table="x_sigr_non_std_req_non_standard_request">stateNOT IN1,-5,-6,-8,3,4,7^active=true^EQ<item display_value="1,-5,-6,-8,3,4,7" endquery="false" field="state" goto="false" newquery="false" operator="NOT IN" or="false" value="1,-5,-6,-8,3,4,7"/>
             <item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="true"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
@@ -21,7 +21,7 @@
         <override_menu_roles>false</override_menu_roles>
         <query/>
         <report/>
-        <roles/>
+        <roles>itil</roles>
         <survey/>
         <survey_overwrite>true</survey_overwrite>
         <sys_class_name>sys_app_module</sys_class_name>
@@ -30,7 +30,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>d10655cd37a376006f3c8d2754990eef</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>In Progress</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_app_module_d10655cd37a376006f3c8d2754990eef</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-11-13 12:56:12</sys_updated_on>
+        <sys_updated_on>2018-09-19 11:16:02</sys_updated_on>
         <timeline_page/>
         <title>In Progress</title>
         <uncancelable>false</uncancelable>

@@ -95,6 +95,8 @@
 		template.print('<tr><td class="field-label">Vulnerability Summary:</td><td class="form-control text-area">' + gr.vulnerability_summary + '</td></tr>');
 		template.print('<tr><td class="field-label">Compatibility:</td><td class="form-control">' + gr.compatibility.getDisplayValue() + '</td></tr>');
 		template.print('<tr><td class="field-label">Compatibility Summary:</td><td class="form-control text-area">' + gr.compatibility_issue + '</td></tr>');
+		template.print('<tr><td class="field-label">Network Connected:</td><td class="form-control">' + gr.u_network + '</td></tr>');
+		template.print('<tr><td class="field-label">TMT Network Summary:</td><td class="form-control text-area">' + gr.u_network_summary + '</td></tr>');
 		if(category == 'software'){
 			template.print('<tr><td class="field-label">Compliance:</td><td class="form-control">' + gr.compliance.getDisplayValue() + '</td></tr>');
 			template.print('<tr><td class="field-label">Compliance Summary:</td><td class="form-control text-area">' + gr.compliance_issue + '</td></tr>');
@@ -163,7 +165,7 @@
         <sys_created_on>2017-06-23 11:02:13</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d4decdd537e776006f3c8d2754990e4f</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>nsr_sysapproval_approver_script</sys_name>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
         <sys_policy/>
@@ -171,6 +173,6 @@
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_script_email_d4decdd537e776006f3c8d2754990e4f</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-11-20 11:05:55</sys_updated_on>
+        <sys_updated_on>2017-11-30 10:58:02</sys_updated_on>
     </sys_script_email>
 </record_update>

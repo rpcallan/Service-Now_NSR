@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2023-04-05 20:45:54">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout display_value="layout_overview">1a656051d7030200eaae68150e610399</layout>
+        <order/>
+        <read_roles>itil</read_roles>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
+        <sys_created_on>2017-11-23 21:59:05</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>41e0007a372243403955261953990e7a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>NonStandard Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
+        <sys_update_name>sys_portal_page_41e0007a372243403955261953990e7a</sys_update_name>
+        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
+        <sys_updated_on>2017-11-23 22:00:38</sys_updated_on>
+        <title>NonStandard Request</title>
+        <user/>
+        <view>nsr</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>2</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>02302d28db015f004972fc45ae9619f7</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02302d28db015f004972fc45ae9619f8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>06302d28db015f004972fc45ae9619f8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0a302d28db015f004972fc45ae9619f7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0a302d28db015f004972fc45ae9619f8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e302d28db015f004972fc45ae9619f7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e302d28db015f004972fc45ae9619f8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Assigned to me Single Score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>1ae65a18db31330011b18a3a4896198d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82302d28db015f004972fc45ae9619f7</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>72ee1c8737b01700d68998a543990e89</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">02302d28db015f004972fc45ae9619f7</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82302d28db015f004972fc45ae9619f9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone4</dropzone>
+                <offset>1</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>06306d28db015f004972fc45ae96190a</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02306d28db015f004972fc45ae96190b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02306d28db015f004972fc45ae96190c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>Non-standard Request report</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>06306d28db015f004972fc45ae96190b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0a306d28db015f004972fc45ae96190b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>semi_donut</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e306d28db015f004972fc45ae96190a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e306d28db015f004972fc45ae96190b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86306d28db015f004972fc45ae96190a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>7f21231d37794780d68998a543990e47</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">06306d28db015f004972fc45ae96190a</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86306d28db015f004972fc45ae96190c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone3</dropzone>
+                <offset>0</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>0e306d28db015f004972fc45ae961900</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02306d28db015f004972fc45ae961902</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>06306d28db015f004972fc45ae961901</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>06306d28db015f004972fc45ae961902</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0a306d28db015f004972fc45ae961901</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0a306d28db015f004972fc45ae961902</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Awaiting Business Approval</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e306d28db015f004972fc45ae961901</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e306d28db015f004972fc45ae961900</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>a94ce6db0f52870004a6716ce1050ef6</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e306d28db015f004972fc45ae961902</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">0e306d28db015f004972fc45ae961900</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>9ae65a18db31330011b18a3a48961970</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone4</dropzone>
+                <offset>0</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>42306d28db015f004972fc45ae961908</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>42306d28db015f004972fc45ae961909</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46306d28db015f004972fc45ae961909</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>list</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a306d28db015f004972fc45ae961908</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a306d28db015f004972fc45ae961909</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Assigned to me</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4e306d28db015f004972fc45ae961908</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2306d28db015f004972fc45ae961908</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>63ad504337b01700d68998a543990e27</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961908</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce306d28db015f004972fc45ae961909</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone5</dropzone>
+                <offset>1</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>42306d28db015f004972fc45ae961911</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>42306d28db015f004972fc45ae961912</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>pivot_v2</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46306d28db015f004972fc45ae961912</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a306d28db015f004972fc45ae961911</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a306d28db015f004972fc45ae961912</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>Active Tasks in last Week</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4e306d28db015f004972fc45ae961911</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2306d28db015f004972fc45ae961911</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>da0fb86c377ecf40d68998a543990e8d</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">42306d28db015f004972fc45ae961911</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce306d28db015f004972fc45ae961912</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>2</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>46302d28db015f004972fc45ae9619fe</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>12e65a18db31330011b18a3a489619af</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>42302d28db015f004972fc45ae9619ff</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>42306d28db015f004972fc45ae961900</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - User Install</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46302d28db015f004972fc45ae9619ff</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a302d28db015f004972fc45ae9619ff</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4e302d28db015f004972fc45ae9619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4e302d28db015f004972fc45ae9619ff</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c6302d28db015f004972fc45ae9619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>ba30a3570fd2870004a6716ce1050e45</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">46302d28db015f004972fc45ae9619fe</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c6306d28db015f004972fc45ae961900</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>1</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>4a302d28db015f004972fc45ae9619f4</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>12e65a18db31330011b18a3a489619aa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>42302d28db015f004972fc45ae9619f5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>42302d28db015f004972fc45ae9619f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46302d28db015f004972fc45ae9619f5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46302d28db015f004972fc45ae9619f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Active Software Requests</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a302d28db015f004972fc45ae9619f5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4e302d28db015f004972fc45ae9619f5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ca302d28db015f004972fc45ae9619f4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>31eb2adb0f52870004a6716ce1050eb8</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">4a302d28db015f004972fc45ae9619f4</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ca302d28db015f004972fc45ae9619f6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>0</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>82302d28db015f004972fc45ae9619f2</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>06302d28db015f004972fc45ae9619f2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>2ec966d70f52870004a6716ce1050efe</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>06302d28db015f004972fc45ae9619f4</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>1ee65a18db31330011b18a3a489619c6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82302d28db015f004972fc45ae9619f3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86302d28db015f004972fc45ae9619f3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8a302d28db015f004972fc45ae9619f2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8a302d28db015f004972fc45ae9619f3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e302d28db015f004972fc45ae9619f2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">82302d28db015f004972fc45ae9619f2</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e302d28db015f004972fc45ae9619f3</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Active Hardware Requests</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone3</dropzone>
+                <offset>2</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>8a306d28db015f004972fc45ae961905</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e306d28db015f004972fc45ae961905</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>e5ecaedb0f52870004a6716ce1050eb1</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e306d28db015f004972fc45ae961907</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>16e65a18db31330011b18a3a489619c6</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82306d28db015f004972fc45ae961906</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82306d28db015f004972fc45ae961907</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86306d28db015f004972fc45ae961906</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86306d28db015f004972fc45ae961907</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Awaiting Cost Approval</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8a306d28db015f004972fc45ae961906</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8a306d28db015f004972fc45ae961905</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e306d28db015f004972fc45ae961906</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>1</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>8e302d28db015f004972fc45ae9619fb</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02302d28db015f004972fc45ae9619fc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>9a206f970fd2870004a6716ce1050e7e</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02302d28db015f004972fc45ae9619fe</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>1ee65a18db31330011b18a3a489619c5</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82302d28db015f004972fc45ae9619fd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86302d28db015f004972fc45ae9619fc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86302d28db015f004972fc45ae9619fd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8a302d28db015f004972fc45ae9619fc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8a302d28db015f004972fc45ae9619fd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - IT Testing</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e302d28db015f004972fc45ae9619fb</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e302d28db015f004972fc45ae9619fc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone5</dropzone>
+                <offset>0</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>8e306d28db015f004972fc45ae96190e</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>02306d28db015f004972fc45ae96190f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>7f0d7c64377ecf40d68998a543990eb1</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>0e306d28db015f004972fc45ae961910</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>82306d28db015f004972fc45ae961910</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86306d28db015f004972fc45ae96190f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>86306d28db015f004972fc45ae961910</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>Tasks Closed in Last Week</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8a306d28db015f004972fc45ae96190f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">8e306d28db015f004972fc45ae96190e</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>8e306d28db015f004972fc45ae96190f</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>pivot_v2</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone3</dropzone>
+                <offset>1</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>c2306d28db015f004972fc45ae961903</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46306d28db015f004972fc45ae961903</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>a5dce21f0f52870004a6716ce1050e5c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>46306d28db015f004972fc45ae961905</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>6ee65a18db31330011b18a3a489619dd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2306d28db015f004972fc45ae961904</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c6306d28db015f004972fc45ae961904</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ca306d28db015f004972fc45ae961903</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ca306d28db015f004972fc45ae961904</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce306d28db015f004972fc45ae961903</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c2306d28db015f004972fc45ae961903</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce306d28db015f004972fc45ae961904</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Awaiting NSR Team Approval</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>0</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>c6302d28db015f004972fc45ae9619f9</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a302d28db015f004972fc45ae9619f9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>6bff5f970fd2870004a6716ce1050e69</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a302d28db015f004972fc45ae9619fb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>is_using_database_view</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>system</sys_created_by>
+                        <sys_created_on>2019-05-29 20:15:00</sys_created_on>
+                        <sys_id>66e65a18db31330011b18a3a489619dd</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>system</sys_updated_by>
+                        <sys_updated_on>2019-05-29 20:15:00</sys_updated_on>
+                        <value>false</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2302d28db015f004972fc45ae9619fa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2302d28db015f004972fc45ae9619fb</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>NSR - Initial Checks</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_real_time</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c6302d28db015f004972fc45ae9619fa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ca302d28db015f004972fc45ae9619fa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>single_score</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce302d28db015f004972fc45ae9619f9</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">c6302d28db015f004972fc45ae9619f9</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce302d28db015f004972fc45ae9619fa</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone4</dropzone>
+                <offset>2</offset>
+                <page display_value="NonStandard Request">41e0007a372243403955261953990e7a</page>
+                <summary/>
+                <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                <sys_id>ca306d28db015f004972fc45ae96190c</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4a306d28db015f004972fc45ae96190e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>41e0007a372243403955261953990e7a</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>4e306d28db015f004972fc45ae96190c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>5e356c0e37a387c0d68998a543990e17</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2306d28db015f004972fc45ae96190d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c2306d28db015f004972fc45ae96190e</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>KB activity</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>c6306d28db015f004972fc45ae96190d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ca306d28db015f004972fc45ae96190d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>report_type</name>
+                        <portal_section display_value="Created 21-03-2018 11:45:08">ca306d28db015f004972fc45ae96190c</portal_section>
+                        <sys_created_by>k.matthews@siskgroup.ie</sys_created_by>
+                        <sys_created_on>2018-03-21 11:45:08</sys_created_on>
+                        <sys_id>ce306d28db015f004972fc45ae96190d</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>k.matthews@siskgroup.ie</sys_updated_by>
+                        <sys_updated_on>2018-03-21 11:45:08</sys_updated_on>
+                        <value>pivot_v2</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

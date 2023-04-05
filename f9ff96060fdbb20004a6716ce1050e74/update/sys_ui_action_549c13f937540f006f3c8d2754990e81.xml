@@ -3,14 +3,19 @@
         <action_name>close.nsrtask</action_name>
         <active>true</active>
         <client>true</client>
+        <client_script_v2/>
         <comments/>
         <condition>current.state ==2;</condition>
         <form_action>true</form_action>
         <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
         <form_context_menu>false</form_context_menu>
         <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
+        <isolate_script>false</isolate_script>
         <list_action>false</list_action>
         <list_banner_button>false</list_banner_button>
         <list_button>false</list_button>
@@ -19,6 +24,7 @@
         <list_link>false</list_link>
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
+        <messages/>
         <name>Close Complete</name>
         <onclick>mandatoryCheck()</onclick>
         <order>-400</order>
@@ -47,6 +53,13 @@ function mandatoryCheck(){
 			if(g_form.getValue('compatibility') == 'issues')
 				g_form.setMandatory('compatibility_issue', true);
 			g_form.showFieldMsg('compatibility',errorMsg,'error');
+			return false;
+		}
+		if(g_form.getValue('u_network') == '' || (g_form.getValue('u_network') == 'yes' && g_form.getValue('u_network_summary') == '')) {
+			g_form.setMandatory('u_network', true);
+			if(g_form.getValue('u_network') == 'yes')
+				g_form.setMandatory('u_network_summary', true);
+			g_form.showFieldMsg('u_network',errorMsg,'error');
 			return false;
 		}
 	}
@@ -144,6 +157,8 @@ function CloseRecord(){
 	if (current.task == 3){
 		gr.compatibility = current.compatibility;
 		gr.compatibility_issue = current.compatibility_issue;
+		gr.u_network = current.u_network.getDisplayValue();
+		gr.u_network_summary = current.u_network_summary;
 		parUpdate = true;
 	}
 	if (current.task == 4){
@@ -209,7 +224,7 @@ function CloseRecord(){
         <sys_customer_update>true</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>549c13f937540f006f3c8d2754990e81</sys_id>
-        <sys_mod_count>46</sys_mod_count>
+        <sys_mod_count>49</sys_mod_count>
         <sys_name>Close Complete</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -218,7 +233,7 @@ function CloseRecord(){
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sys_ui_action_549c13f937540f006f3c8d2754990e81</sys_update_name>
         <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-11-22 17:17:57</sys_updated_on>
+        <sys_updated_on>2017-11-30 10:55:14</sys_updated_on>
         <table>x_sigr_non_std_req_nsr_task</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>

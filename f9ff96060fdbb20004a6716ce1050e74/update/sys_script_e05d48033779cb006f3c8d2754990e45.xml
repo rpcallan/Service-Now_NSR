@@ -15,8 +15,8 @@
         <condition/>
         <description/>
         <execute_function>false</execute_function>
-        <filter_condition table="x_sigr_non_std_req_nsr_task">task=10^non_standard_softwareCHANGESTOyes^EQ<item endquery="false" field="task" goto="false" newquery="false" operator="=" or="false" value="10"/>
-            <item endquery="false" field="non_standard_software" goto="false" newquery="false" operator="CHANGESTO" or="false" value="yes"/>
+        <filter_condition table="x_sigr_non_std_req_nsr_task">task=10^non_standard_softwareCHANGESTOyes^EQ<item display_value="Software Checks" endquery="false" field="task" goto="false" newquery="false" operator="=" or="false" value="10"/>
+            <item display_value="Yes" endquery="false" field="non_standard_software" goto="false" newquery="false" operator="CHANGESTO" or="false" value="yes"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter_condition>
         <is_rest>false</is_rest>

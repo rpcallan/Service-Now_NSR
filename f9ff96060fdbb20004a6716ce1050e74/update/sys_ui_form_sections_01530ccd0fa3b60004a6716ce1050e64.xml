@@ -65,6 +65,19 @@
             <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
             <sys_updated_on>2017-08-03 08:40:20</sys_updated_on>
         </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>j.dixon@siskgroup.ie</sys_created_by>
+            <sys_created_on>2018-11-27 11:37:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>7275c2d1db062b40bd9b320a68961934</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_sigr_non_std_req_non_standard_request" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="Default view">01530ccd0fa3b60004a6716ce1050e64</sys_ui_form>
+            <sys_ui_section caption="Admin" display_value="Admin" name="x_sigr_non_std_req_non_standard_request" sys_domain="global" view="Default view">3a75c2d1db062b40bd9b320a6896192f</sys_ui_section>
+            <sys_updated_by>j.dixon@siskgroup.ie</sys_updated_by>
+            <sys_updated_on>2018-11-27 11:37:19</sys_updated_on>
+        </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_sigr_non_std_req_non_standard_request</name>
             <roles/>

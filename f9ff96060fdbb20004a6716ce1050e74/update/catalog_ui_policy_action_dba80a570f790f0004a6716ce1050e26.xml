@@ -2,9 +2,11 @@
     <catalog_ui_policy_action action="INSERT_OR_UPDATE">
         <catalog_item display_value="Non-Standard Hardware Request">67a07f770f9d0b0004a6716ce1050ee4</catalog_item>
         <catalog_variable>IO:5d63fff70f9d0b0004a6716ce1050eeb</catalog_variable>
+        <cleared>false</cleared>
         <disabled>ignore</disabled>
         <field/>
         <mandatory>true</mandatory>
+        <order>100</order>
         <sys_class_name>catalog_ui_policy_action</sys_class_name>
         <sys_created_by>r.callan@siskgroup.ie</sys_created_by>
         <sys_created_on>2017-10-19 14:21:21</sys_created_on>

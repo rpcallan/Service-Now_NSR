@@ -5,12 +5,27 @@
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
-        <category display_value="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <category display_value="Non Standard Request" name="Non Standard Request">a1b7c748db5103009ca35101ce961989</category>
         <collection>sysapproval_approver</collection>
-        <condition/>
+        <condition table="sysapproval_approver">source_table=x_sigr_non_std_req_non_standard_request^EQ<item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="x_sigr_non_std_req_non_standard_request"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
         <content_type>text/html</content_type>
+        <default_interval/>
         <description/>
-        <event_name>nsr.approval.inserted</event_name>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html><![CDATA[<p>&nbsp;</p>
+<hr />
+<p>&nbsp;</p>]]></digest_separator_html>
+        <digest_separator_text><![CDATA[\n--------------------------------------------------------------------------------\n]]></digest_separator_text>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <enable_dynamic_translation>false</enable_dynamic_translation>
+        <event_name>approval.inserted</event_name>
         <event_parm_1>false</event_parm_1>
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
@@ -45,7 +60,7 @@
         <sys_customer_update>false</sys_customer_update>
         <sys_domain>global</sys_domain>
         <sys_id>4e29419537e776006f3c8d2754990e58</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>(NSR) Approval Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Non Standard Request" source="x_sigr_non_std_req">f9ff96060fdbb20004a6716ce1050e74</sys_package>
@@ -53,8 +68,8 @@
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Non Standard Request">f9ff96060fdbb20004a6716ce1050e74</sys_scope>
         <sys_update_name>sysevent_email_action_4e29419537e776006f3c8d2754990e58</sys_update_name>
-        <sys_updated_by>r.callan@siskgroup.ie</sys_updated_by>
-        <sys_updated_on>2017-11-15 15:22:35</sys_updated_on>
+        <sys_updated_by>callanra</sys_updated_by>
+        <sys_updated_on>2022-10-18 09:02:50</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="nsr.request.approval">d12d45d537e776006f3c8d2754990e89</template>
         <type>email</type>
